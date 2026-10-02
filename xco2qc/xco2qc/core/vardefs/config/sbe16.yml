@@ -1,0 +1,323 @@
+chl:
+  attributes:
+    ancillary_variables: chl_qc chl_stddev
+    long_name: Chlorophyll
+    units: ug/l
+    valid_range:
+    - 0
+    - 1000
+  datatype: f8
+  dimensions:
+  - time
+  fill_value: -9999
+chl_nighttime:
+  attributes:
+    ancillary_variables: chl_nighttime_qc chl_nighttime_stddev
+    long_name: Night Time Chlorophyll
+    units: ug/l
+    valid_range:
+    - 0
+    - 1000
+  datatype: f8
+  dimensions:
+  - time
+  fill_value: -9999
+chl_nighttime_qc:
+  attributes:
+    flag_masks:
+    - 1
+    - 2
+    - 4
+    - 8
+    - 64
+    - 512
+    flag_meanings: quality_good missing_data out_of_range spike_detected 
+      manually_flagged  daytime
+    long_name: chl_nighttime Quality
+    standard_name: status_flag
+  datatype: I4
+  dimensions:
+  - time
+  fill_value: 4294967295
+chl_nighttime_stddev:
+  attributes:
+    long_name: Night Time Chlorophyll STDDEV
+    units: ug/l
+  datatype: f8
+  dimensions:
+  - time
+  fill_value: -9999
+chl_qc:
+  attributes:
+    flag_masks:
+    - 1
+    - 2
+    - 4
+    - 8
+    - 64
+    flag_meanings: quality_good missing_data out_of_range spike_detected 
+      manually_flagged 
+    long_name: chl Quality
+    standard_name: status_flag
+  datatype: I4
+  dimensions:
+  - time
+  fill_value: 4294967295
+chl_stddev:
+  attributes:
+    long_name: Chlorophyll STDDEV
+    units: ug/l
+  datatype: f8
+  dimensions:
+  - time
+  fill_value: -9999
+current:
+  attributes:
+    long_name: SBE16 Current
+    units: TODO
+  datatype: f8
+  dimensions:
+  - time
+  fill_value: -9999
+density:
+  attributes:
+    ancillary_variables: density_qc
+    long_name: SBE16 Density
+    standard_name: sea_water_density
+    units: kg m-3
+  datatype: f8
+  dimensions:
+  - time
+  fill_value: -9999
+density_qc:
+  attributes:
+    flag_masks:
+    - 1
+    - 2
+    - 4
+    - 8
+    - 64
+    flag_meanings: quality_good missing_data out_of_range spike_detected
+      manually_flagged 
+    long_name: density Quality
+    standard_name: status_flag
+  datatype: I4
+  dimensions:
+  - time
+  fill_value: 4294967295
+ntu:
+  attributes:
+    ancillary_variables: ntu_qc ntu_stddev
+    long_name: Turbidity
+    units: '1'
+    valid_range:
+    - 0
+    - 1000
+  datatype: f8
+  dimensions:
+  - time
+  fill_value: -9999
+ntu_nighttime:
+  attributes:
+    ancillary_variables: ntu_nighttime_qc ntu_nighttime_stddev
+    long_name: Nighttime Turbidity
+    units: TODO
+    valid_range:
+    - 0
+    - 1000
+  datatype: f8
+  dimensions:
+  - time
+  fill_value: -9999
+ntu_nighttime_qc:
+  attributes:
+    flag_masks:
+    - 1
+    - 2
+    - 4
+    - 8
+    - 64
+    - 512
+    flag_meanings: quality_good missing_data out_of_range spike_detected
+      manually_flagged  daytime
+    long_name: ntu_nighttime Quality
+    standard_name: status_flag
+  datatype: I4
+  dimensions:
+  - time
+  fill_value: 4294967295
+ntu_nighttime_stddev:
+  attributes:
+    long_name: Nighttime Turbidity STDDEV
+    units: TODO
+  datatype: f8
+  dimensions:
+  - time
+  fill_value: -9999
+ntu_qc:
+  attributes:
+    flag_masks:
+    - 1
+    - 2
+    - 4
+    - 8
+    - 64
+    flag_meanings: quality_good missing_data out_of_range spike_detected
+      manually_flagged 
+    long_name: ntu Quality
+    standard_name: status_flag
+  datatype: I4
+  dimensions:
+  - time
+  fill_value: 4294967295
+ntu_stddev:
+  attributes:
+    long_name: Turbidity STDDEV
+    units: TODO
+  datatype: f8
+  dimensions:
+  - time
+  fill_value: -9999
+o2:
+  attributes:
+    ancillary_variables: o2_qc o2_stddev
+    long_name: Oxygen
+    units: uM
+    valid_range:
+    - 0
+    - 1000
+  datatype: f8
+  dimensions:
+  - time
+  fill_value: -9999
+o2_qc:
+  attributes:
+    flag_masks:
+    - 1
+    - 2
+    - 4
+    - 8
+    - 64
+    - 256
+    flag_meanings: quality_good missing_data out_of_range spike_detected
+      manually_flagged bad_SSTc
+    long_name: o2 Quality
+    standard_name: status_flag
+  datatype: I4
+  dimensions:
+  - time
+  fill_value: 4294967295
+o2_sat:
+  attributes:
+    long_name: Oxygen Saturation
+    valid_range:
+    - 0
+    - 1000
+  datatype: f8
+  dimensions:
+  - time
+  fill_value: -9999
+o2_stddev:
+  attributes:
+    long_name: Oxygen STDDEV
+    units: TODO
+  datatype: f8
+  dimensions:
+  - time
+  fill_value: -9999
+o2_temp:
+  attributes:
+    ancillary_variables: o2_temp_qc o2_temp_stddev
+    long_name: O2 Temperature
+    valid_range:
+    - 0
+    - 1000
+  datatype: f8
+  dimensions:
+  - time
+  fill_value: -9999
+o2_temp_qc:
+  attributes:
+    flag_masks:
+    - 1
+    - 2
+    - 4
+    - 8
+    - 64
+    flag_meanings: quality_good missing_data out_of_range spike_detected
+      manually_flagged 
+    long_name: o2_temp Quality
+    standard_name: status_flag
+  datatype: I4
+  dimensions:
+  - time
+  fill_value: 4294967295
+o2_temp_stddev:
+  attributes:
+    long_name: O2 Temperature STDDEV
+  datatype: f8
+  dimensions:
+  - time
+  fill_value: -9999
+pressure:
+  attributes:
+    ancillary_variables: pressure_qc
+    long_name: Pressure
+    standard_name: sea_water_pressure
+    units: kPa
+  datatype: f8
+  dimensions:
+  - time
+  fill_value: -9999
+pressure_qc:
+  attributes:
+    flag_masks:
+    - 1
+    - 2
+    - 4
+    - 8
+    - 64
+    flag_meanings: quality_good missing_data out_of_range spike_detected
+      manually_flagged 
+    long_name: pressure Quality
+    standard_name: status_flag
+  datatype: I4
+  dimensions:
+  - time
+  fill_value: 4294967295
+time:
+  attributes:
+    axis: T
+    calendar: proleptic_gregorian
+    long_name: Time
+    standard_name: time
+    units: seconds since 1970-01-01T00:00:00
+  datatype: i8
+  dimensions:
+  - time
+  fill_value: -9999
+voltage:
+  attributes:
+    ancillary_variables: voltage_qc
+    long_name: Voltage
+    units: volts
+  datatype: f8
+  dimensions:
+  - time
+  fill_value: -9999
+voltage_qc:
+  attributes:
+    flag_masks:
+    - 1
+    - 2
+    - 4
+    - 8
+    - 64
+    flag_meanings: quality_good missing_data out_of_range spike_detected
+      manually_flagged 
+    long_name: voltage Quality
+    standard_name: status_flag
+  datatype: I4
+  dimensions:
+  - time
+  fill_value: 4294967295

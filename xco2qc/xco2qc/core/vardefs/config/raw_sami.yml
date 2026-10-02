@@ -1,0 +1,25 @@
+hex_string:
+  attributes:
+    long_name: SAMI Observation HEX String
+  datatype: str
+  fill_value: XXXXXXXXXX
+sami_time:
+  attributes:
+    axis: T
+    calendar: proleptic_gregorian
+    comment: timestamp from the SAMI cycle
+    long_name: Time
+    standard_name: time
+    units: seconds since 1970-01-01T00:00:00
+  datatype: i8
+  fill_value: -9999
+time:
+  attributes:
+    axis: T
+    calendar: proleptic_gregorian
+    comment: Timestamp from MAPCO2 cycle header
+    long_name: Time
+    standard_name: time
+    units: seconds since 1970-01-01T00:00:00
+  datatype: i8
+  fill_value: -9999

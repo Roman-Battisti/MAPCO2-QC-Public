@@ -1,0 +1,709 @@
+atm_pressure:
+  attributes:
+    ancillary_variables: atm_pressure_qc
+    long_name: Atmospheric Pressure
+    units: hPa
+  datatype: f8
+  dimensions:
+  - time
+  fill_value: -9999
+atm_pressure_qc:
+  attributes:
+    flag_masks:
+    - 1
+    - 2
+    - 4
+    - 8
+    - 64
+    flag_meanings: >-
+      quality_good missing_data out_of_range spike_detected
+      manually_flagged
+    long_name: atm_pressure Quality
+    standard_name: status_flag
+  datatype: I4
+  dimensions:
+  - time
+  fill_value: 4294967295
+chl:
+  attributes:
+    ancillary_variables: chl_qc
+    long_name: Chlorophyll
+    units: ug/l
+    valid_range:
+    - 0
+    - 1000
+  datatype: f8
+  dimensions:
+  - time
+  fill_value: -9999
+chl_qc:
+  attributes:
+    flag_masks:
+    - 1
+    - 2
+    - 4
+    - 8
+    - 64
+    flag_meanings: quality_good missing_data out_of_range spike_detected 
+      manually_flagged 
+    long_name: chl Quality
+    standard_name: status_flag
+  datatype: I4
+  dimensions:
+  - time
+  fill_value: 4294967295
+chl_nighttime:
+  attributes:
+    ancillary_variables: chl_nighttime_qc
+    long_name: Night Time Chlorophyll
+    units: ug/l
+    valid_range:
+    - 0
+    - 1000
+  datatype: f8
+  dimensions:
+  - time
+  fill_value: -9999
+chl_nighttime_qc:
+  attributes:
+    flag_masks:
+    - 1
+    - 2
+    - 4
+    - 8
+    - 64
+    - 512
+    flag_meanings: quality_good missing_data out_of_range spike_detected 
+      manually_flagged  daytime
+    long_name: CHL NightTime Quality
+    standard_name: status_flag
+  datatype: I4
+  dimensions:
+  - time
+  fill_value: 4294967295
+dissolved_oxygen:
+  attributes:
+    ancillary_variables: dissolved_oxygen_qc
+    long_name: Salinity Compensated O2
+    standard_name: moles_of_oxygen_per_unit_mass_in_sea_water
+    units: umol kg-1
+  datatype: f8
+  dimensions:
+  - time
+  fill_value: -99
+dissolved_oxygen_qc:
+  attributes:
+    flag_masks:
+    - 1
+    - 2
+    - 4
+    - 8
+    - 64
+    flag_meanings: >-
+      quality_good missing_data out_of_range spike_detected
+      manually_flagged
+    long_name: Dissolved Oxygen Quality
+    standard_name: status_flag
+  datatype: I4
+  dimensions:
+  - time
+  fill_value: 4294967295
+fCO2_air:
+  attributes:
+    ancillary_variables: fCO2_air_qc
+    long_name: Fugacity
+    units: Pa
+    valid_range:
+    - 0
+    - 1000
+  datatype: f8
+  dimensions:
+  - time
+  fill_value: -99
+fCO2_air_qc:
+  attributes:
+    flag_masks:
+    - 1
+    - 2
+    - 4
+    - 8
+    - 256
+    flag_meanings: >-
+      quality_good missing_data out_of_range spike_detected bad_SSTc
+    long_name: Fugacity in Air Quality
+    standard_name: status_flag
+  datatype: I4
+  dimensions:
+  - time
+  fill_value: 4294967295
+fCO2_sw:
+  attributes:
+    ancillary_variables: fCO2_sw_qc
+    long_name: Fugacity in Water
+    standard_name: fugacity_of_carbon_dioxide_in_sea_water
+    units: Pa
+    valid_range:
+    - 0
+    - 1000
+  datatype: f8
+  dimensions:
+  - time
+  fill_value: -99
+fCO2_sw_qc:
+  attributes:
+    flag_masks:
+    - 1
+    - 2
+    - 4
+    - 8
+    - 256
+    flag_meanings: >-
+      quality_good missing_data out_of_range spike_detected bad_SSTc
+    long_name: Fugacity in Water Quality
+    standard_name: status_flag
+  datatype: I4
+  dimensions:
+  - time
+  fill_value: 4294967295
+latitude:
+  attributes:
+    ancillary_variables: latitude_qc
+    long_name: GPS Latitude
+    standard_name: latitude
+    units: degrees_north
+    valid_range:
+    - -90
+    - 90
+  datatype: f8
+  dimensions:
+  - time
+  fill_value: -9999
+latitude_qc:
+  attributes:
+    flag_masks:
+    - 1
+    - 2
+    - 4
+    - 8
+    - 64
+    flag_meanings: >-
+      quality_good missing_data out_of_range spike_detected
+      manually_flagged
+    long_name: latitude Quality
+    standard_name: status_flag
+  datatype: I4
+  dimensions:
+  - time
+  fill_value: 4294967295
+longitude:
+  attributes:
+    ancillary_variables: longitude_qc
+    long_name: GPS Longitude
+    standard_name: longitude
+    units: degrees_east
+    valid_range:
+    - -180
+    - 180
+  datatype: f8
+  dimensions:
+  - time
+  fill_value: -9999
+longitude_qc:
+  attributes:
+    flag_masks:
+    - 1
+    - 2
+    - 4
+    - 8
+    - 64
+    flag_meanings: >-
+      quality_good missing_data out_of_range spike_detected
+      manually_flagged
+    long_name: longitude Quality
+    standard_name: status_flag
+  datatype: I4
+  dimensions:
+  - time
+  fill_value: 4294967295
+mode:
+  attributes:
+    categories: ' '
+    long_name: Header Mode
+  datatype: I1
+  dimensions:
+  - time
+  fill_value: 255
+ntu:
+  attributes:
+    ancillary_variables: ntu_qc
+    long_name: Turbidity
+    units: unity
+    valid_range:
+    - 0
+    - 1000
+  datatype: f8
+  dimensions:
+  - time
+  fill_value: -9999
+ntu_qc:
+  attributes:
+    flag_masks:
+    - 1
+    - 2
+    - 4
+    - 8
+    - 64
+    flag_meanings: quality_good missing_data out_of_range spike_detected
+      manually_flagged 
+    long_name: ntu Quality
+    standard_name: status_flag
+  datatype: I4
+  dimensions:
+  - time
+  fill_value: 4294967295
+o2_ratio:
+  attributes:
+    ancillary_variables: o2_ratio_qc
+    long_name: Ratio of Surface Seawater O2 Percent to atmosphere O2 Percent
+    standard_name: fractional_saturation_of_oxygen_in_sea_water
+    units: '1'
+  datatype: f8
+  dimensions:
+  - time
+  fill_value: -9999
+o2_ratio_qc:
+  attributes:
+    flag_masks:
+    - 1
+    - 2
+    - 4
+    - 8
+    - 64
+    - 512
+    - 1024
+    flag_meanings: >-
+      quality_good missing_data out_of_range spike_detected
+      manually_flagged bad_apoff_qc bad_epoff_qc
+    long_name: o2_ratio Quality
+    standard_name: status_flag
+  datatype: I4
+  dimensions:
+  - time
+  fill_value: 4294967295
+pCO2_air:
+  attributes:
+    ancillary_variables: pCO2_air_qc
+    long_name: Partial Pressure of CO2 in Air at the Airblock
+    standard_name: surface_partial_pressure_of_carbon_dioxide_in_air
+    units: umol / mol / atm
+  datatype: f8
+  dimensions:
+  - time
+  fill_value: -9999
+pCO2_air_qc:
+  attributes:
+    flag_masks:
+    - 1
+    - 2
+    - 4
+    - 8
+    - 64
+    - 256
+    flag_meanings: >-
+      quality_good missing_data out_of_range spike_detected
+      manually_flagged bad_SSTc
+    long_name: pCO2 Air Quality
+    standard_name: status_flag
+  datatype: I4
+  dimensions:
+  - time
+  fill_value: 4294967295
+pCO2_sw:
+  attributes:
+    ancillary_variables: pCO2_sw_qc
+    long_name: Partial Pressure of CO2 in Air in Equilibrium with the Seawater
+    standard_name: surface_partial_pressure_of_carbon_dioxide_in_sea_water
+    units: umol / mol / atm
+  datatype: f8
+  dimensions:
+  - time
+  fill_value: -9999
+pCO2_sw_qc:
+  attributes:
+    flag_masks:
+    - 1
+    - 2
+    - 4
+    - 8
+    - 64
+    - 256
+    flag_meanings: >-
+      quality_good missing_data out_of_range spike_detected
+      manually_flagged bad_SSTc
+    long_name: pCO2 SW Quality
+    standard_name: status_flag
+  datatype: I4
+  dimensions:
+  - time
+  fill_value: 4294967295
+pH_sw:
+  attributes:
+    ancillary_variables: pH_sw_qc
+    long_name: pH
+    standard_name: sea_water_ph_reported_on_total_scale
+    units: "1"
+    valid_range:
+    - 7.5
+    - 8.9
+  datatype: f8
+  dimensions:
+  - time
+  fill_value: -9999
+pH_sw_qc:
+  attributes:
+    flag_masks:
+    - 1
+    - 2
+    - 4
+    - 8
+    - 64
+    - 256
+    flag_meanings: >-
+      quality_good missing_data out_of_range spike_detected
+      manually_flagged bad_SSTc
+    long_name: ph Quality
+    standard_name: status_flag
+  datatype: I4
+  dimensions:
+  - time
+  fill_value: 4294967295
+pH_pco2sys:
+  attributes:
+    long_name: pH
+    standard_name: sea_water_ph_reported_on_total_scale
+    units: "1"
+    valid_range:
+    - 7.5
+    - 8.9
+    comment: pH calculated via PCO2SYS
+  datatype: f8
+  dimensions:
+  - time
+  fill_value: -9999
+SSS:
+  attributes:
+    ancillary_variables: SSS_qc
+    long_name: Salinity
+    standard_name: sea_surface_SSS
+    units: 1e-3
+    valid_range:
+    - 0.0001
+    - 42
+  datatype: f8
+  dimensions:
+  - time
+  fill_value: -9999
+SSS_qc:
+  attributes:
+    flag_masks:
+    - 1
+    - 2
+    - 4
+    - 8
+    - 64
+    flag_meanings: quality_good missing_data out_of_range spike_detected
+      manually_flagged 
+    long_name: SSS Quality
+    standard_name: status_flag
+  datatype: I4
+  dimensions:
+  - time
+  fill_value: 4294967295
+SST:
+  attributes:
+    ancillary_variables: SST_qc
+    long_name: Sea Surface Temperature
+    standard_name: sea_surface_temperature
+    units: degrees_celsius
+    valid_range:
+    - -2.5
+    - 40
+  datatype: f8
+  dimensions:
+  - time
+  fill_value: -9999
+SST_qc:
+  attributes:
+    flag_masks:
+    - 1
+    - 2
+    - 4
+    - 8
+    - 64
+    flag_meanings: quality_good missing_data out_of_range spike_detected
+      manually_flagged 
+    long_name: SST Quality
+    standard_name: status_flag
+  datatype: I4
+  dimensions:
+  - time
+  fill_value: 4294967295
+temperature:
+  attributes:
+    ancillary_variables: temperature_qc
+    comment: data source is licor
+    long_name: Temperature
+    units: degrees_Celsius
+  datatype: f8
+  dimensions:
+  - time
+  fill_value: -9999
+temperature_qc:
+  attributes:
+    flag_masks:
+    - 1
+    - 2
+    - 4
+    - 8
+    - 64
+    flag_meanings: quality_good missing_data out_of_range spike_detected
+      manually_flagged 
+    long_name: temperature Quality
+    standard_name: status_flag
+  datatype: I4
+  dimensions:
+  - time
+  fill_value: 4294967295
+time:
+  attributes:
+    axis: T
+    calendar: proleptic_gregorian
+    long_name: Time
+    standard_name: time
+    units: seconds since 1970-01-01T00:00:00
+  datatype: i8
+  dimensions:
+  - time
+  fill_value: -9999
+vapor_pressure_air:
+  attributes:
+    long_name: Mole fraction of H2O in air from airblock
+    units: mmol / mol
+  datatype: f8
+  dimensions:
+  - time
+  fill_value: -9999
+vapor_pressure_sw:
+  attributes:
+    long_name: Mole fraction of H2O in air from equilibrator
+    units: mmol / mol
+  datatype: f8
+  dimensions:
+  - time
+  fill_value: -9999
+xCO2_air:
+  attributes:
+    ancillary_variables: xCO2_air_qc xco2_air_socat_qc
+    comments: data source is APOFF post_xCO2_dry
+    long_name: Mole fraction of CO2 in Dry Air
+    units: umol / mol
+    valid_range:
+    - 0
+    - 700
+  datatype: f8
+  dimensions:
+  - time
+  fill_value: -9999
+xCO2_air_qc:
+  attributes:
+    flag_masks:
+    - 1
+    - 2
+    - 4
+    - 8
+    - 64
+    - 512
+    - 1024
+    - 2048
+    - 4096
+    - 8192
+    - 16384
+    - 32768
+    - 65536
+    - 131072
+    flag_meanings: >-
+      quality_good
+      missing_data
+      out_of_range
+      spike_detected
+      manually_flagged
+      trend_stddev_out_of_range
+      raw_stddev_out_of_range
+      excess_pressure_off_difference
+      air_pump_pressure_difference
+      equilibriator_pump_pressure_difference
+      span_pump_pressure_difference
+      excess_rh_stddev
+      excess_rh_temp_stddev
+      out_of_span_range
+    long_name: xCO2_air Quality
+    standard_name: status_flag
+  datatype: I4
+  dimensions:
+  - time
+  fill_value: 4294967295
+xco2_air_wet:
+  attributes:
+    ancillary_variables: xco2_air_wet_qc
+    comments: data source is APOFF
+    long_name: Mole fraction of CO2 in Air from airblock at measured humidity
+    units: umol / mol
+    valid_range:
+    - 0
+    - 700
+  datatype: f8
+  dimensions:
+  - time
+  fill_value: -9999
+xco2_air_wet_qc:
+  attributes:
+    flag_masks:
+    - 1
+    - 2
+    - 4
+    - 8
+    - 64
+    - 512
+    - 1024
+    - 2048
+    - 4096
+    - 8192
+    - 16384
+    - 32768
+    - 65536
+    - 131072
+    flag_meanings: >-
+      quality_good
+      missing_data
+      out_of_range
+      spike_detected
+      manually_flagged
+      trend_stddev_out_of_range
+      raw_stddev_out_of_range
+      excess_pressure_off_difference
+      air_pump_pressure_difference
+      equilibriator_pump_pressure_difference
+      span_pump_pressure_difference
+      excess_rh_stddev
+      excess_rh_temp_stddev
+      out_of_span_range
+    long_name: xco2_air_wet Quality
+    standard_name: status_flag
+  datatype: I4
+  dimensions:
+  - time
+  fill_value: 4294967295
+xCO2_sw:
+  attributes:
+    ancillary_variables: xCO2_sw_qc xco2_sw_socat_qc
+    comments: data source is EPOFF post_xCO2_dry
+    long_name: Mole fraction of CO2 in air in equilibrium with the seawater at sea
+      surface temperature
+    units: umol / mol
+    valid_range:
+    - 0
+    - 700
+  datatype: f8
+  dimensions:
+  - time
+  fill_value: -9999
+xCO2_sw_qc:
+  attributes:
+    flag_masks:
+    - 1
+    - 2
+    - 4
+    - 8
+    - 64
+    - 512
+    - 1024
+    - 2048
+    - 4096
+    - 8192
+    - 16384
+    - 32768
+    - 65536
+    - 131072
+    flag_meanings: >-
+      quality_good
+      missing_data
+      out_of_range
+      spike_detected
+      manually_flagged
+      trend_stddev_out_of_range
+      raw_stddev_out_of_range
+      excess_pressure_off_difference
+      air_pump_pressure_difference
+      equilibriator_pump_pressure_difference
+      span_pump_pressure_difference
+      excess_rh_stddev
+      excess_rh_temp_stddev
+      out_of_span_range
+    long_name: xCO2_sw Quality
+    standard_name: status_flag
+  datatype: I4
+  dimensions:
+  - time
+  fill_value: 4294967295
+xco2_sw_wet:
+  attributes:
+    ancillary_variables: xco2_sw_wet_qc
+    comments: data source is EPOFF
+    long_name: Mole fraction of CO2 in air in equilibrium with the seawater at sea
+      surface and measured humidity
+    units: umol / mol
+    valid_range:
+    - 0
+    - 700
+  datatype: f8
+  dimensions:
+  - time
+  fill_value: -9999
+xco2_sw_wet_qc:
+  attributes:
+    flag_masks:
+    - 1
+    - 2
+    - 4
+    - 8
+    - 64
+    - 512
+    - 1024
+    - 2048
+    - 4096
+    - 8192
+    - 16384
+    - 32768
+    - 65536
+    - 131072
+    flag_meanings: >-
+      quality_good
+      missing_data
+      out_of_range
+      spike_detected
+      manually_flagged
+      trend_stddev_out_of_range
+      raw_stddev_out_of_range
+      excess_pressure_off_difference
+      air_pump_pressure_difference
+      equilibriator_pump_pressure_difference
+      span_pump_pressure_difference
+      excess_rh_stddev
+      excess_rh_temp_stddev
+      out_of_span_range
+    long_name: xco2_sw_wet Quality
+    standard_name: status_flag
+  datatype: I4
+  dimensions:
+  - time
+  fill_value: 4294967295

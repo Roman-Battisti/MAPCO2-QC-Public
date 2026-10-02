@@ -1,0 +1,8 @@
+SAMI2-pH
+QC_PH version	 4.10
+Seawater
+DateTime	 SAMIpH	 pHerror	     TempC	 Salinity	 Flags(Outlier,Pump,Sat,Blank)
+06/20/2016 23:05:01 	          NaN	          NaN	          NaN	          NaN	 0000 
+06/21/2016 02:05:00 	       8.0526	      0.00267	      21.5590	      35.7688	 0000 
+06/21/2016 05:05:00 	       8.0530	      0.00522	      21.5703	      35.7925	 0000 
+06/21/2016 08:05:00 	       8.0540	      0.00302	      21.5458	      35.7761	 0000 

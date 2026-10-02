@@ -1,0 +1,140 @@
+NC_file_mapping:
+    header: cycle_header.nc
+    zpon: licor.zero-pump-on.nc
+    zpoff: licor.zero-pump-off.nc
+    zpcal: licor.zero-post-cal.nc
+    spon: licor.span-pump-on.nc
+    spoff: licor.span-pump-off.nc
+    spcal: licor.span-post-cal.nc
+    epon: licor.equil-pump-on.nc
+    epoff: licor.equil-pump-off.nc
+    apon: licor.air-pump-on.nc
+    apoff: licor.air-pump-off.nc
+    met: MetSSTC.nc
+    sbe16: sbe16.nc
+    sami: sami.nc
+    historical: historical.nc
+
+PRESS: pressure
+zero_coef: zero_coefficient
+span_coef: updated_span_coefficient
+PRESSURE: pressure
+RH: rh
+RH_TEMP: rh_temp
+XCO2_DRY: xco2_dry
+XCO2_WET_STDDEV: xco2_wet_stddev
+PH_SW: ph_sw
+CHL: chl
+CHL_NIGHTTIME: chl_nighttime
+CHL_qc: chl_qc
+NTU: ntu
+NTU_qc: ntu_qc
+O2: o2
+O2_qc: o2_qc
+
+AXES:
+    x:
+        - autorange
+    y1:
+        - autorange
+    y2:
+        - autorange
+
+# colorblindness colors: https://scottplot.net/cookbook/4.1/colors/#category-20
+STANDARD_COLORS:
+    merge:
+        default: '#808080'
+        xco2_air: '#DE0005'
+        xco2_sw: '#4100FE'
+        ph_sw: '#FF00FF'
+        chl: '#2E8B57'
+        chl_nighttime: '#552e8b'
+        ntu: '#8B4513'
+        dissolved_oxygen: '#00FFFF'
+        sst: '#000000'
+        sss: '#F18D14'
+    header:
+        default: '#808080'
+        zero_coefficient: '#0037FF'
+        zero_flag: '#0037FF'
+        span_coefficient: '#E81600'
+        span_flag: '#E81600'
+    zpon:
+        default: '#4100FF'
+        pressure: '#0027FF'
+    zpoff:
+        default: '#DD0005'
+        pressure: '#0027FF'
+    zpcal:
+        default: '#48D51E'
+    spon:
+        default: '#904810'
+        pressure: '#E81600'
+    spoff:
+        default: '#AE00F4'
+        pressure: '#E81600'
+    spcal:
+        default: '#3B5453'
+    epon:
+        default: '#F500FF'
+        pressure: '#029130'
+    epoff:
+        default: '#216E0A'
+        pressure: '#029130'
+    apon:
+        default: '#5ECBFF'
+        pressure: '#78523B'
+    apoff:
+        default: '#B81A1E'
+        pressure: '#78523B'
+    validation:
+        default: '#FF4500'
+
+COLORBLIND_COLORS:
+    merge:
+        default: '#7F7F7F'
+        xco2_air: '#D62728'
+        xco2_sw: '#1F77B4'
+        ph_sw: '#E377C2'
+        chl: '#2CA02C'
+        chl_nighttime: '#9467BD'
+        ntu: '#FF7F0E'
+        dissolved_oxygen: '#17BECF'
+        sst: '#000000'
+        sss: '#BCBD22'
+    header:
+        default: '#7F7F7F'
+        zero_coefficient: '#AEC7E8'
+        zero_flag: '#AEC7E8'
+        span_coefficient: '#FFBB78'
+        span_flag: '#FFBB78'
+    zpon:
+        default: '#9EDAE5'
+        pressure: '#9EDAE5'
+    zpoff:
+        default: '#BCBD22'
+        pressure: '#9EDAE5'
+    zpcal:
+        default: '#98DF8A'
+    spon:
+        default: '#8C564B'
+        pressure: '#FFBB78'
+    spoff:
+        default: '#C5B0D5'
+        pressure: '#FFBB78'
+    spcal:
+        default: '#DBDB8D'
+    epon:
+        default: '#C5B0D5'
+        pressure: '#98DF8A'
+    epoff:
+        default: '#2CA02C'
+        pressure: '#98DF8A'
+    apon:
+        default: '#AEC7E8'
+        pressure: '#C49C94'
+    apoff:
+        default: '#FF9896'
+        pressure: '#C7C7C7'
+    validation:
+        default: '#FF7F0E'

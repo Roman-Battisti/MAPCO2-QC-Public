@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<x_tags>
+  <User>
+    <Name></Name>
+    <Organization>NOAA/PMEL</Organization>
+    <Address>7600 Sand Point Way NE Seattle, WA 98115-6349</Address>
+    <Phone/>
+    <Email></Email>
+  </User>
+  <Investigator>
+    <Name>Dr. Adrienne Sutton</Name>
+    <Organization>NOAA/PMEL</Organization>
+    <Address>7600 Sand Point Way NE Seattle, WA 98115-6349</Address>
+    <Phone>(206) 526-6879</Phone>
+    <Email>Adrienne.Sutton@noaa.gov</Email>
+  </Investigator>
+  <Dataset_Info>
+    <Funding_Info>NOAA</Funding_Info>
+    <Submission_Dates>
+      <Initial_Submission></Initial_Submission>
+    </Submission_Dates>
+  </Dataset_Info>
+  <Cruise_Info>
+    <Experiment>
+      <Experiment_Type></Experiment_Type>
+      <Cruise>
+        <Cruise_ID></Cruise_ID>
+        <Geographical_Coverage>
+          <Bounds>
+            <Westernmost_Longitude></Westernmost_Longitude>
+            <Easternmost_Longitude></Easternmost_Longitude>
+            <Northernmost_Latitude></Northernmost_Latitude>
+            <Southernmost_Latitude></Southernmost_Latitude>
+          </Bounds>
+        </Geographical_Coverage>
+        <Temporal_Coverage>
+          <Start_Date></Start_Date>
+          <End_Date></End_Date>
+        </Temporal_Coverage>
+      </Cruise>
+    </Experiment>
+    <Vessel>
+      <Vessel_Type></Vessel_Type>
+	  <Vessel_Name></Vessel_Name>
+	  <Vessel_ID></Vessel_ID>
+    </Vessel>
+  </Cruise_Info>
+  <Variables_Info>
+    <Variable>
+      <Variable_Name>Date Time</Variable_Name>
+      <Description_of_Variable>Date and Time (UTC)</Description_of_Variable>
+    </Variable>
+    <Variable>
+      <Variable_Name>xCO2 SW (wet)</Variable_Name>
+      <Description_of_Variable>(umol/mol) Mole fraction of CO2 in air in equilibrium with the seawater at sea surface temperature and measured humidity.</Description_of_Variable>
+    </Variable>
+    <Variable>
+      <Variable_Name>CO2 SW QF</Variable_Name>
+      <Description_of_Variable>Flag for xCO2 sw (wet)</Description_of_Variable>
+    </Variable>
+    <Variable>
+      <Variable_Name>H2O SW</Variable_Name>
+      <Description_of_Variable>(mmol/mol) Mole fraction of H2O in air from equilibrator.</Description_of_Variable>
+    </Variable>
+    <Variable>
+      <Variable_Name>xCO2 Air (wet)</Variable_Name>
+      <Description_of_Variable>umol/mol) Mole fraction of CO2 in air from airblock, 4 feet above the sea surface at measured humidity.</Description_of_Variable>
+    </Variable>
+    <Variable>
+      <Variable_Name>CO2 Air QF</Variable_Name>
+      <Description_of_Variable>Quality Flag for xCO2 Air (wet)</Description_of_Variable>
+    </Variable>
+    <Variable>
+      <Variable_Name>H2O Air</Variable_Name>
+      <Description_of_Variable>(mmol/mol) Mole fraction of H2O in air from airblock, 4 feet above the sea surface.</Description_of_Variable>
+    </Variable>
+    <Variable>
+      <Variable_Name>Licor Atm Pressure</Variable_Name>
+      <Description_of_Variable>(hPa) The air intake is approximately 1 m above the sea surface. For equilibration-based systems deployed on autonomous surface platforms, the air-sea equilibration also occurs at the sea surface, so Atmospheric Pressure reported here is equivalent to Equilibrator Pressure (Peq).</Description_of_Variable>
+    </Variable>
+    <Variable>
+      <Variable_Name>Licor Temp</Variable_Name>
+      <Description_of_Variable>(C) Temperature of the Infrared Licor 820 in degrees Celsius.</Description_of_Variable>
+    </Variable>
+    <Variable>
+      <Variable_Name>MAPCO2 %O2</Variable_Name>
+      <Description_of_Variable>The percent oxygen of the surface seawater divided by the percent oxygen of the atmosphere at 4 feet above the sea surface. Disclaimer: The oxygen measurement is made in the equilibrated air. We have found that the oxygen does not come to complete equilibrium so any rapid changes in oxygen do not get properly captured using this system. Therefore, we tend to use the oxygen data only as a qualitative sense of the biology.  It is not a quantitative measure.</Description_of_Variable>
+    </Variable>
+    <Variable>
+      <Variable_Name>SST</Variable_Name>
+      <Description_of_Variable>(C) Sea Surface Temperature. For equilibration-based systems deployed on autonomous surface platforms, the air-sea equilibration occurs at the sea surface, so SST reported here is equivalent to Equilibrator Temperature (Teq). This means that there is no warming between in situ SST and Teq as on ship-based equilibrator-based pCO2 systems.</Description_of_Variable>
+    </Variable>
+    <Variable>
+      <Variable_Name>Salinity</Variable_Name>
+      <Description_of_Variable>(PSU) Sea Surface Salinity.</Description_of_Variable>
+    </Variable>
+    <Variable>
+      <Variable_Name>xCO2 SW (dry)</Variable_Name>
+      <Description_of_Variable>(umol/mol) Mole fraction of CO2 in air in equilibrium with the seawater at sea surface temperature (dry air).</Description_of_Variable>
+    </Variable>
+    <Variable>
+      <Variable_Name>xCO2 Air (dry)</Variable_Name>
+      <Description_of_Variable>(umol/mol) Mole fraction of CO2 in air at the airblock, 4 feet above the sea surface (dry air).</Description_of_Variable>
+    </Variable>
+    <Variable>
+      <Variable_Name>fCO2 SW (sat)</Variable_Name>
+      <Description_of_Variable>(uatm) Fugacity of CO2 in air in equilibrium with the seawater at sea surface temperature (100% humidity). Since the measurements are taken at the sea surface, warming calculations are not necessary.</Description_of_Variable>
+    </Variable>
+    <Variable>
+      <Variable_Name>fCO2 Air (sat)</Variable_Name>
+      <Description_of_Variable>(uatm) Fugacity of CO2 in air at the airblock, 4 feet above the sea surface (100% humidity).</Description_of_Variable>
+    </Variable>
+    <Variable>
+      <Variable_Name>dfCO2</Variable_Name>
+      <Description_of_Variable>Difference of the fugacity of the CO2 in seawater and the fugacity of the CO2 in air (fCO2 SW - fCO2 Air).</Description_of_Variable>
+    </Variable>
+    <Variable>
+      <Variable_Name>pCO2 SW (wet)</Variable_Name>
+      <Description_of_Variable>(uatm) Partial Pressure of CO2 in air in equilibrium with the seawater at sea surface temperature (100% humidity)</Description_of_Variable>
+    </Variable>
+    <Variable>
+      <Variable_Name>pCO2 Air (wet)</Variable_Name>
+      <Description_of_Variable>(uatm) Partial Pressure of CO2 in air at the airblock, 4 feet above the sea surface (100% humidity).</Description_of_Variable>
+    </Variable>
+    <Variable>
+      <Variable_Name>dpCO2</Variable_Name>
+      <Description_of_Variable>Difference of the partial pressure of CO2 in seawater and air (pCO2 SW - pCO2 Air</Description_of_Variable>
+    </Variable>
+    <Variable>
+      <Variable_Name>pH SW</Variable_Name>
+      <Description_of_Variable>pH of Seawater (total scale)</Description_of_Variable>
+    </Variable>
+    <Variable>
+      <Variable_Name>pH QF</Variable_Name>
+      <Description_of_Variable>Quality Flag for pH</Description_of_Variable>
+    </Variable>
+    <Variable>
+      <Variable_Name>CHL</Variable_Name>
+      <Description_of_Variable>Total Chlorophyll (ug/l)</Description_of_Variable>
+    </Variable>
+    <Variable>
+      <Variable_Name>CHL QF</Variable_Name>
+      <Description_of_Variable>Quality Flag for CHL</Description_of_Variable>
+    </Variable>
+    <Variable>
+      <Variable_Name>NTU</Variable_Name>
+      <Description_of_Variable>Nephelometric Turbidity Unit(NTU Units)</Description_of_Variable>
+    </Variable>
+    <Variable>
+      <Variable_Name>NTU QF</Variable_Name>
+      <Description_of_Variable>Quality Flag for NTU</Description_of_Variable>
+    </Variable>
+    <Variable>
+      <Variable_Name>DOXY</Variable_Name>
+      <Description_of_Variable>Salinity-Compensated dissolved oxygen(umol/kg)</Description_of_Variable>
+    </Variable>
+    <Variable>
+      <Variable_Name>DOXY QF</Variable_Name>
+      <Description_of_Variable>Quality Flag for DOXY</Description_of_Variable>
+    </Variable>
+  </Variables_Info>
+  <Method_Description>
+    <Equilibrator_Design>
+      <Depth_of_Sea_Water_Intake>14cm - 20cm</Depth_of_Sea_Water_Intake>
+      <Equilibrator_Type>Bubble Equilibrator</Equilibrator_Type>
+      <Equilibrator_Volume>N/A</Equilibrator_Volume>
+      <Water_Flow_Rate>N/A</Water_Flow_Rate>
+      <Headspace_Gas_Flow_Rate>~600 cc/min</Headspace_Gas_Flow_Rate>
+      <Vented>Yes</Vented>
+    </Equilibrator_Design>
+    <CO2_in_Marine_Air>
+      <Measurement>yes, 3hr cycle</Measurement>
+      <Location_and_Height>unused</Location_and_Height>
+      <Drying_Method>unused</Drying_Method>
+    </CO2_in_Marine_Air>
+    <CO2_Sensors>
+      <CO2_Sensor>
+        <Measurement_Method>Absolute, non-dispersive infrared (NDIR) gas analyzer</Measurement_Method>
+        <Manufacturer>Licor</Manufacturer>
+        <Model>LI-820</Model>
+        <Frequency>3hr cycle</Frequency>
+        <Resolution_Water>0.7 uatm</Resolution_Water>
+        <Uncertainty_Water>2 uatm</Uncertainty_Water>
+        <Resolution_Air>0.6 uatm</Resolution_Air>
+        <Uncertainty_Air>1 uatm</Uncertainty_Air>
+		<Resolution_Atm_Pressure>0.01 hPa</Resolution_Atm_Pressure>
+        <Uncertainty_Atm_Pressure>0.1 hPa</Uncertainty_Atm_Pressure>
+        <Manufacturer_of_Calibration_Gas>NOAA Earth System Research&amp; #xD;Laboratory (ESRL)</Manufacturer_of_Calibration_Gas>
+	<CO2_Sensor_Calibration>At the beginning of each sample, the instrument self-calibrates using a zero and high standard. The zero standard is generated by cycling a small amount of air through a soda lime chamber. The high standard is from a cylinder of calibrated standard reference gas, {spanconc} umol/mol, from ESRL. ESRL standards are traceable to WMO x93 scale with a stated reproducibility of 0.06 micromole/mole. For more information on estimates of accuracy and precision of the MAPCO2 system, see Sutton et al. 2014 (reference below).</CO2_Sensor_Calibration>
+        <Method_References>Sutton, A.J., Sabine, C.L., Maenner-Jones, S., Lawrence-Slavas, N., Meinig, C., Feely, R.A., Mathis, J.T., Musielewicz, S., Bott, R., McLain, P.D., Fought, J., Kozyr, A., 2014b. A high-frequency atmospheric and seawater pCO2 data set from 14 open ocean sites using a moored autonomous system. Earth Sys. Sci. Data, 6, doi: 10.5194/essd-6-353-2014, 353-366.</Method_References>
+      </CO2_Sensor>
+    </CO2_Sensors>
+    <Sea_Surface_Temperature>
+      <Location>1m</Location>
+      <Manufacturer>SeaBird</Manufacturer>
+      <Model>SBE 16</Model>
+      <Accuracy>&lt;  0.01</Accuracy>
+      <Calibration>~ Annually by SeaBird</Calibration>
+      <Other_Comments>Temperature data are internally recorded and collected during the equilibration period. Data are not post-calibrated. Annual drift for this deployment was minimal and does not impact the fCO2 and pCO2  calculations (within the degree of accuracy of the CO2 measurement).  Contact us if you would like the CTD post-calibration information.</Other_Comments>
+    </Sea_Surface_Temperature>
+    <Sea_Surface_Salinity>
+      <Location>1m</Location>
+      <Manufacturer>SeaBird</Manufacturer>
+      <Model>SBE 16</Model>
+      <Accuracy>&lt;  0.05</Accuracy>
+      <Calibration>~ Annually by SeaBird</Calibration>
+      <Other_Comments>Conductivity data are internally recorded and collected during the equilibration period. Data are not post-calibrated. Annual drift for this deployment was minimal and does not impact the fCO2 and pCO2 calculations (within the degree of accuracy of the CO2 measurement).  Contact us if you would like the CTD post-calibration information.</Other_Comments>
+    </Sea_Surface_Salinity>
+    <Other_Sensors>
+      <Sensor>
+        <Manufacturer>Maxtec Oxygen Sensor</Manufacturer>
+        <Accuracy>2.0% Full Scale over operating temperature range. 1.0% Full Scale @ constant temperature and pressure </Accuracy>
+        <Model>Max-250</Model>
+        <Resolution>0.01%</Resolution>
+        <Calibration>Factory calibrated before purchase. Recalibrated to sea level atmospheric air every 7 days</Calibration>
+      </Sensor>
+      <Sensor>
+        <Manufacturer>Sensirion Humidity Sensor</Manufacturer>
+        <Accuracy>&gt; 0.01%</Accuracy>
+        <Model>SHT71</Model>
+        <Resolution>Measurement range: 0-100% RH Absolute. RH accuracy: +/- 3% RH (20-80% RH) Repeatability RH: +/- 0.1% RH</Resolution>
+        <Calibration>Factory calibrated before purchase.</Calibration>
+      </Sensor>
+      <Sensor>
+        <Manufacturer>Sunburst Sensors, LLC</Manufacturer>
+        <Model>SAMI2 pH</Model>
+        <Resolution>&lt; 0.001 pH units</Resolution>
+        <Uncertainty>+/- 0.003 pH units (from manufacturer)</Uncertainty>
+        <Calibration>~ Annually by Sunburst Sensors</Calibration>
+        <Other_Comments>pH data are collected and internally recorded during the CO2 equilibration period. Data are salinity compensated with salinity collected by the Seabird SBE16, using the program Sunburst Sensors QC_PH. Spaulding, R., 2015. Salinity Measurement and SAMI-pH Accuracy. Tech Notes, 1. Sensor resolution and uncertainty were provided by the manufacturer.</Other_Comments>
+      </Sensor>
+      <Sensor>
+        <Manufacturer>Wet Labs</Manufacturer>
+        <Model>ECO FLNTUS</Model>
+        <Resolution>0.025 ug/l</Resolution>
+        <Uncertainty></Uncertainty>
+        <Calibration>~ Annually by Wet Labs, Inc</Calibration>
+        <Other_Comments>The community-established calibration bias of 2 for the WET Labs ECO-series fluorometer was applied to these in situ fluorometric chlorophyll values (Roesler et al. 2017). Sensor resolution was provided by the manufacturer. The accuracy of fluorescence-based chlorophyll is unknown.</Other_Comments>
+      </Sensor>
+      <Sensor>
+        <Manufacturer>Wet Labs</Manufacturer>
+        <Model>ECO FLNTUS</Model>
+        <Resolution>0.013 NTU</Resolution>
+        <Uncertainty></Uncertainty>
+        <Calibration>~ Annually by Wet Labs, Inc</Calibration>
+        <Other_Comments>Sensor resolution and uncertainty were provided by the manufacturer. The accuracy of optical-based turbidity is unknown.</Other_Comments>
+      </Sensor>
+      <Sensor>
+        <Manufacturer>Seabird</Manufacturer>
+        <Model>SBE63</Model>
+        <Resolution>0.2 umol/kg</Resolution>
+        <Uncertainty>+/- 3.0 umol/kg (2%)</Uncertainty>
+        <Calibration>~ Annually by Seabird Electronics, Inc</Calibration>
+        <Other_Comments>Sensor resolution and uncertainty were provided by the manufacturer.</Other_Comments>
+      </Sensor>
+    </Other_Sensors>
+  </Method_Description>
+  <Data_set_References>None</Data_set_References>
+  <Additional_Information>
+o All measurements are at sea surface temperature and atmospheric pressure. 
+
+o During the equilibration cycle, a closed loop of air equilibrates with seawater for 10 minutes. Once the equilibration period is complete, the pump stops and the system opens to the atmosphere allowing the pressure to equilibrate with atmospheric pressure. Measurements are recorded for 30 seconds at 2 hertz and then averaged.
+
+o During the air cycle, fresh air is pumped through the detector for 1 minute. Once the pump stops, the system opens to the atmosphere allowing the pressure to equilibrate with atmospheric pressure. Measurements are recorded for 30 seconds at 2 hertz and then averaged.
+
+o The gas streams for both the air cycle and equilibrator cycle are partially dried before entering the detector. The values listed as wet xCO2 generally have relative humidity levels ranging from 40 to 80 percent. The humidity levels increase over the course of a deployment.
+
+o Sampling occurs every 3 hours. The infrared detector is calibrated at the beginning of every sampling period. Averaged data and standard deviations for each measurement are transmitted back daily.
+
+o To calculate the dry measurements, the water mole fraction in the Licor detector must be known. A relative humidity sensor is located immediately downstream of the detector.
+
+o During the QC process, an adjustment to the Licor pressure is also made based on each sensor's bias to barometric pressure as measured in the lab.  This system has Licor pressure bias of {licor_pressure_bias} applied.
+
+{loss_of_span_stmt}
+
+{licor_coefficient_regression_equation}
+
+{mbl_correction}
+
+o No data = -999
+
+o These data are made freely available to the public and the scientific community in the belief that their wide dissemination will lead to greater understanding and new scientific insights. The availability of these data does not constitute publication of the data. We rely on the ethics and integrity of the user to assure that PMEL receives fair credit for our work. Please send manuscripts using this data to PMEL for review before they are submitted for publication so we can insure that the quality and limitations of the data are accurately represented.
+</Additional_Information>
+  <Citation></Citation>
+  <Data_Set_Link>
+    <Link_Note></Link_Note>
+  </Data_Set_Link>
+  <status>draft</status>
+  <form_type>underway</form_type>
+</x_tags>

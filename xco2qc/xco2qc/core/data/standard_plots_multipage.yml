@@ -1,0 +1,268 @@
+standard_plots_data:
+    col_1:
+        1:
+            name: xCO2 SW and xCO2 Air
+            y1:
+                - MERGE xCO2_sw:
+                    hovertemplate: "<b>xCO2 SW</b>: %{y:.2f}<br><b>Flag Notes</b>: %{text}<extra></extra>"
+                    marker:
+                        color: MERGE xCO2_sw_qc
+                    text: MERGE xCO2_sw_qc_reason
+            y2:
+                - xCO2_air:
+                    hovertemplate: "<b>xCO2 Air</b>: %{y:.2f}<br><b>Flag Notes</b>: %{text}<extra></extra>"
+                    marker:
+                        color: MERGE xCO2_air_qc
+                    text: xCO2_air_qc_reason
+        2:
+            name: xCO2 SW and Equilibrator Pump On Pressure
+            y1:
+                - MERGE xCO2_sw:
+                    hovertemplate: "<b>xCO2 SW</b>: %{y:.2f}<extra></extra>"
+            y2:
+                - EPON PRESSURE:
+                    hovertemplate: "<b>EPON Pressure</b>: %{y}<extra></extra>"
+    
+    col_2:
+        1:
+            name: SST and xCO2 SW
+            y1: 
+                - MERGE SST:
+                    hovertemplate: "<b>SST</b>: %{y:.3f}<extra></extra>"
+            y2:
+                - MERGE xCO2_sw:
+                    hovertemplate: "<b>xCO2 SW</b>: %{y:.2f}<extra></extra>"
+        2:
+            name: SST and SSS
+            y1:
+                - MERGE SST:
+                    hovertemplate: "<b>SST</b>: %{y:.3f}<br><b>Flag Notes</b>: %{text}<extra></extra>"
+                    marker:
+                        color: MERGE sst_qc
+                    text: MERGE temperature_qc_reason
+            y2: 
+                - MERGE SSS:
+                    hovertemplate: "<b>SSS</b>: %{y:.3f}<br><b>Flag Notes</b>: %{text}<extra></extra>"
+                    marker:
+                        color: MERGE sss_qc
+                    text: MERGE sss_qc_reason
+        
+standard_plots_diagnostic:
+    col_1:
+        1:
+            name: Zero and Span Coefficients
+            y1:
+                - HEADER ZERO_COEFFICIENT:
+                    hovertemplate: "<b>Zero Coef</b>: %{y}<extra></extra>"
+            y2:
+                - HEADER SPAN_COEFFICIENT:
+                    hovertemplate: "<b>Span Coef</b>: %{y}<extra></extra>"
+        2:
+            name: xCO2 Standard Deviations
+            y1:
+                - ZPON XCO2_WET_STDDEV:
+                    hovertemplate: "<b>ZPON xCO2 std</b>: %{y}<extra></extra>"
+                - ZPOFF XCO2_WET_STDDEV:
+                    hovertemplate: "<b>ZPOFF xCO2 std</b>: %{y}<extra></extra>"
+                - ZPCAL XCO2_WET_STDDEV:
+                    hovertemplate: "<b>ZPCAL xCO2 std</b>: %{y}<extra></extra>"
+                - SPON XCO2_WET_STDDEV:
+                    hovertemplate: "<b>SPON xCO2 std</b>: %{y}<extra></extra>"
+                - SPOFF XCO2_WET_STDDEV:
+                    hovertemplate: "<b>SPOFF xCO2 std</b>: %{y}<extra></extra>"
+                - SPCAL XCO2_WET_STDDEV:
+                    hovertemplate: "<b>SPCAL xCO2 std</b>: %{y}<extra></extra>"
+                - EPON XCO2_WET_STDDEV:
+                    hovertemplate: "<b>EPON xCO2 std</b>: %{y}<extra></extra>"
+                - EPOFF XCO2_WET_STDDEV:
+                    hovertemplate: "<b>EPOFF xCO2 std</b>: %{y}<extra></extra>"
+                - APON XCO2_WET_STDDEV:
+                    hovertemplate: "<b>APON xCO2 std</b>: %{y}<extra></extra>"
+                - APOFF XCO2_WET_STDDEV:
+                    hovertemplate: "<b>APOFF xCO2 std</b>: %{y}<extra></extra>"
+        3:
+            name: Pressure Differences
+            y1:
+                - ZPOFF PRESSURE - ZPON PRESSURE:
+                    hovertemplate: "<b>Zero Pressure Difference (Off - On)</b>: %{y}<extra></extra>"
+                - SPON PRESSURE - SPOFF PRESSURE:
+                    hovertemplate: "<b>Span Pressure Difference (On - Off)</b>: %{y}<extra></extra>"
+                - APOFF PRESSURE - APON PRESSURE:
+                    hovertemplate: "<b>Air Pressure Difference (Off - On)</b>: %{y}<extra></extra>"
+                - EPOFF PRESSURE - EPON PRESSURE:
+                    hovertemplate: "<b>Seawater Pressure Difference (Off - On)</b>: %{y}<extra></extra>"
+    col_2:
+        1:
+            name: Zero xCO2 dry (On, Off, and Post-cal)
+            y1:
+                - ZPON XCO2_DRY:
+                    hovertemplate: "<b>Zero Pump On xCO2 dry</b>: %{y}<extra></extra>"
+                - ZPOFF XCO2_DRY:
+                    hovertemplate: "<b>Zero Pump Off xCO2 dry</b>: %{y}<extra></extra>"
+                - ZPCAL XCO2_DRY:
+                    hovertemplate: "<b>Zero Pump Post-cal xCO2 dry</b>: %{y}<extra></extra>"
+        2:
+            name: Relative Humidities (RH)
+            y1:
+                - ZPON RH:
+                    hovertemplate: "<b>Zero Pump On RH</b>: %{y}<extra></extra>"
+                - ZPOFF RH:
+                    hovertemplate: "<b>Zero Pump Off RH</b>: %{y}<extra></extra>"
+                - ZPCAL RH:
+                    hovertemplate: "<b>Zero Pump Post-cal RH</b>: %{y}<extra></extra>"
+                - SPON RH:
+                    hovertemplate: "<b>Span Pump On RH</b>: %{y}<extra></extra>"
+                - SPOFF RH:
+                    hovertemplate: "<b>Span Pump Off RH</b>: %{y}<extra></extra>"
+                - SPCAL RH:
+                    hovertemplate: "<b>Span Pump Post-cal RH</b>: %{y}<extra></extra>"
+                - APON RH:
+                    hovertemplate: "<b>Air Pump On RH</b>: %{y}<extra></extra>"
+                - APOFF RH:
+                    hovertemplate: "<b>Air Pump Off RH</b>: %{y}<extra></extra>"
+                - EPON RH:
+                    hovertemplate: "<b>Seawater Pump On RH</b>: %{y}<extra></extra>"
+                - EPOFF RH:
+                    hovertemplate: "<b>Seawater Pump Off RH</b>: %{y}<extra></extra>"
+        3:
+            name: Pump On Pressures
+            y1:
+                - ZPON PRESSURE:
+                    hovertemplate: "<b>ZPON Pressure</b>: %{y}<extra></extra>"
+                - SPON PRESSURE:
+                    hovertemplate: "<b>SPON Pressure</b>: %{y}<extra></extra>"
+                - APON PRESSURE:
+                    hovertemplate: "<b>APON Pressure</b>: %{y}<extra></extra>"
+                - EPON PRESSURE:
+                    hovertemplate: "<b>EPON Pressure</b>: %{y}<extra></extra>"
+    
+    col_3:
+        1:
+            name: Span xCO2 dry (On, Off, and Post-cal)
+            y1:
+                - SPON XCO2_DRY:
+                    hovertemplate: "<b>Span Pump On xCO2 dry</b>: %{y}<extra></extra>"
+                - SPOFF XCO2_DRY:
+                    hovertemplate: "<b>Span Pump Off xCO2 dry</b>: %{y}<extra></extra>"
+                - SPCAL XCO2_DRY:
+                    hovertemplate: "<b>Span Pump Post-cal xCO2 dry</b>: %{y}<extra></extra>"
+        3:
+            name: Pump Off Pressures
+            y1:
+                - ZPOFF PRESSURE:
+                    hovertemplate: "<b>ZPOFF Pressure</b>: %{y}<extra></extra>"
+                - SPOFF PRESSURE:
+                    hovertemplate: "<b>SPOFF Pressure</b>: %{y}<extra></extra>"
+                - APOFF PRESSURE:
+                    hovertemplate: "<b>APOFF Pressure</b>: %{y}<extra></extra>"
+                - EPOFF PRESSURE:
+                    hovertemplate: "<b>EPOFF Pressure</b>: %{y}<extra></extra>"
+
+aux_plots:
+    ph_sw:
+        col_1:
+            1:
+                name: pH vs xCO2 sw
+                y2_autorange: reversed
+                y1:
+                    - MERGE PH_SW:
+                        hovertemplate: "<b>pH</b>: %{y}<extra></extra>"
+                y2:
+                    - MERGE xCO2_sw:
+                        hovertemplate: "<b>xCO2 SW</b>: %{y}<extra></extra>"
+        col_3:
+            1:
+                name: measured pH and calculated pH (pCO2 & TA)
+                y1:
+                    - MERGE PH_SW:
+                        hovertemplate: "<b>Timestamp</b>: %{x}<br><b>pH</b>: %{y}<br><b>Flag Notes</b>: %{text}<extra></extra>"
+                        marker:
+                            color: MERGE pH_sw_qc
+                        text: MERGE pH_sw_qc_reason
+                    - MERGE PH_PCO2SYS:
+                        hovertemplate: "<b>Timestamp</b>: %{x}<br><b>pCO2sys pH</b>: %{y}"
+
+    chl:
+        col_3:
+            1:
+                name: Chlorophyll with Climatology
+                y1:
+                    - MERGE CHL:
+                        hovertemplate: "<b>CHL (day)</b>: %{y}<extra></extra>"
+                    - MERGE CHL_NIGHTTIME:
+                        hovertemplate: "<b>CHL (night)</b>: %{y}<br><b>Flag Notes</b>: %{text}<extra></extra>"
+                        marker:
+                            color: MERGE chl_nighttime_qc
+                        text: MERGE chl_nighttime_qc_reason
+                    - CHL_CLIMATOLOGY CHL_CLIMATOLOGY:
+                        hovertemplate: "<b>CHL Climatology</b>: %{y}<extra></extra>"
+
+    ntu:
+        col_3:
+            1:
+                name: NTU
+                y1:
+                    - MERGE NTU:
+                        hovertemplate: "<b>NTU</b>: %{y}<br><b>Flag Notes</b>: %{text}<extra></extra>"
+                        marker:
+                            color: MERGE NTU_qc
+                        text: MERGE ntu_qc_reason
+
+    dissolved_oxygen:
+        col_2:
+            1:
+                name: xCO2 SW and O2 with climatology
+                y1:
+                    - MERGE xCO2_sw:
+                        hovertemplate: "<b>xCO2 SW</b>: %{y:.2f}<extra></extra>"
+                y2:
+                    - MERGE DISSOLVED_OXYGEN:
+                        hovertemplate: "<b>Timestamp</b>: %{x}<br><b>O2</b>: %{y}<br><b>Flag Notes</b>: %{text}<extra></extra>"
+                        marker:
+                            color: MERGE dissolved_oxygen_qc
+                        text: MERGE dissolved_oxygen_qc_reason
+                    - O2_CLIMATOLOGY O2_CLIMATOLOGY:
+                        hovertemplate: "<b>O2 Climatology</b>: %{y}<extra></extra>"
+
+mobile_plots:
+    col_1:
+        1:
+            name: xCO2 Air (dry) by position
+            type: map
+            x: HEADER LONGITUDE
+            y1:
+                - HEADER LATITUDE:
+                    hovertemplate: "%{text}<br><b>xCO2 Air</b>: %{marker.color: .2f}<extra></extra>"
+                    marker:
+                        color: MERGE xCO2_air
+                    text: MERGE TIME
+        2:
+            name: xCO2 SW (dry) by position
+            type: map
+            x: HEADER LONGITUDE
+            y1:
+                - HEADER LATITUDE:
+                    hovertemplate: "%{text}<br><b>xCO2 SW</b>: %{marker.color: .2f}<extra></extra>"
+                    marker:
+                        color: MERGE xCO2_sw
+                    text: MERGE TIME
+        3:
+            name: SST by position
+            type: map
+            x: HEADER LONGITUDE
+            y1:
+                - HEADER LATITUDE:
+                    hovertemplate: "%{text}<br><b>SST</b>: %{marker.color: .3f}<extra></extra>"
+                    marker:
+                        color: MERGE SST
+                    text: MERGE TIME
+        4:
+            name: SSS by position
+            type: map
+            x: HEADER LONGITUDE
+            y1:
+                - HEADER LATITUDE:
+                    hovertemplate: "%{text}<br><b>SSS</b>: %{marker.color: .3f}<extra></extra>"
+                    marker:
+                        color: MERGE SSS
+                    text: MERGE TIME

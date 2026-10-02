@@ -1,0 +1,83 @@
+battery:
+  attributes:
+    long_name: Battery
+    units: volts
+  datatype: f8
+  fill_value: -9999
+controller_temp:
+  attributes:
+    long_name: Controller Temp (22C at room temp)
+    units: degrees_celsius
+  datatype: f8
+  fill_value: -9999
+durafet_time:
+  attributes:
+    axis: T
+    calendar: proleptic_gregorian
+    long_name: Durafet Time
+    standard_name: time
+    units: seconds since 1970-01-01T00:00:00
+  datatype: i8
+  fill_value: -9999
+fet_ext:
+  attributes:
+    long_name: V FET EXT
+    units: volts
+  datatype: f8
+  fill_value: -9999
+fet_int:
+  attributes:
+    long_name: V FET INT
+    units: volts
+  datatype: f8
+  fill_value: -9999
+isolated_power:
+  attributes:
+    long_name: Isolated Power
+    units: volts
+  datatype: f8
+  fill_value: -9999
+ph_ext:
+  attributes:
+    long_name: FET EXT calculated pH in total scale
+    valid_range:
+    - 7.5
+    - 8.9
+  datatype: f8
+  fill_value: -9999
+ph_int:
+  attributes:
+    long_name: FET INT calculated pH in total scale
+    valid_range:
+    - 7.5
+    - 8.9
+  datatype: f8
+  fill_value: -9999
+pressure:
+  attributes:
+    long_name: Pressure Samples
+    units: dbar
+  datatype: f8
+  fill_value: -9999
+temperature:
+  attributes:
+    long_name: Temperature Samples
+    units: degrees_celsius
+  datatype: f8
+  fill_value: -9999
+temperature_voltage:
+  attributes:
+    long_name: Durafet Temperature (1.1V at room temp)
+    units: volts
+  datatype: f8
+  fill_value: -9999
+time:
+  attributes:
+    axis: T
+    calendar: proleptic_gregorian
+    comment: Timestamp from MAPCO2 cycle header
+    long_name: Time
+    standard_name: time
+    units: seconds since 1970-01-01T00:00:00
+  datatype: i8
+  fill_value: -9999

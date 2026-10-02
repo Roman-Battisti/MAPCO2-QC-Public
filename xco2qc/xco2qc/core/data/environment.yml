@@ -1,0 +1,44 @@
+name: xco2qc
+channels:
+  - conda-forge
+dependencies:
+  - autograd
+  - build
+  - cftime
+  - coverage
+  - erddapy
+  - flake8
+  - future
+  - git
+  - gsw
+  - ipywidgets>=8.0
+  - jupyter
+  - lxml
+  - matplotlib>=3.3.2
+  - netcdf4
+  - numpy
+  - openpyxl!=3.1.1
+  - pandas<=1.5.3
+  - pip
+  - plotly
+  - pynco
+  - pyqt
+  - pytables
+  - pytest
+  - pytest-cov
+  - pytest-xdist
+  - python
+  - python-dateutil>=2.8.1
+  - python-docx
+  - pyyaml
+  - requests
+  - scikit-learn
+  - scipy
+  - seaborn
+  - sphinx
+  - statsmodels
+  - tornado<6.2.0
+  - xarray
+  - xlrd
+  - pip:
+    - pyco2sys

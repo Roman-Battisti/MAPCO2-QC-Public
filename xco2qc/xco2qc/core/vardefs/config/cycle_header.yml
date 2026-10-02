@@ -1,0 +1,219 @@
+battery_logic:
+  attributes:
+    long_name: battery logic
+  datatype: f8
+  dimensions:
+  - time
+  fill_value: -9999
+battery_trans:
+  attributes:
+    long_name: battery trans
+  datatype: f8
+  dimensions:
+  - time
+  fill_value: -9999
+gps_aqtime:
+  attributes:
+    long_name: GPS Acquisition Time
+  datatype: i2
+  dimensions:
+  - time
+  fill_value: 32767
+gps_dtime:
+  attributes:
+    calendar: proleptic_gregorian
+    long_name: GPS DTime
+    units: seconds since 1970-01-01T00:00:00
+  datatype: i8
+  dimensions:
+  - time
+  fill_value: -9999
+gps_dtime_ck:
+  attributes:
+    calendar: proleptic_gregorian
+    long_name: GPS DTime Check
+    units: seconds since 1970-01-01T00:00:00
+  datatype: i8
+  dimensions:
+  - time
+  fill_value: -9999
+latitude:
+  attributes:
+    ancillary_variables: latitude_qc
+    axis: X
+    long_name: GPS Latitude
+    standard_name: latitude
+    units: degrees_north
+    valid_range:
+    - -90
+    - 90
+  datatype: f8
+  dimensions:
+  - time
+  fill_value: -9999
+latitude_qc:
+  attributes:
+    flag_masks:
+    - 1
+    - 2
+    - 4
+    - 8
+    - 64
+    flag_meanings: >-
+      quality_good missing_data out_of_range spike_detected
+      manually_flagged
+    long_name: latitude Quality
+    standard_name: status_flag
+  datatype: I4
+  dimensions:
+  - time
+  fill_value: 4294967295
+longitude:
+  attributes:
+    ancillary_variables: longitude_qc
+    axis: X
+    long_name: GPS Longitude
+    standard_name: longitude
+    units: degrees_east
+    valid_range:
+    - -180
+    - 180
+  datatype: f8
+  dimensions:
+  - time
+  fill_value: -9999
+longitude_qc:
+  attributes:
+    flag_masks:
+    - 1
+    - 2
+    - 4
+    - 8
+    - 64
+    flag_meanings: >-
+      quality_good missing_data out_of_range spike_detected
+      manually_flagged
+    long_name: longitude Quality
+    standard_name: status_flag
+  datatype: I4
+  dimensions:
+  - time
+  fill_value: 4294967295
+gps_qf:
+  attributes:
+    long_name: GPS QF
+  datatype: i1
+  dimensions:
+  - time
+  fill_value: 127
+in_out_flag:
+  attributes:
+    long_name: In Out Flag
+  datatype: S1
+  dimensions:
+  - time
+  fill_value: ' '
+mode:
+  attributes:
+    categories: ' '
+    long_name: Header Mode
+    units: 1
+  datatype: I1
+  dimensions:
+  - time
+  fill_value: 255
+rand1:
+  attributes:
+    long_name: Rand1
+  datatype: I1
+  dimensions:
+  - time
+  fill_value: 255
+rand2:
+  attributes:
+    long_name: Rand2
+  datatype: I1
+  dimensions:
+  - time
+  fill_value: 255
+span2_coefficient:
+  attributes:
+    long_name: 2nd Licor Span Coefficient
+  datatype: f8
+  dimensions:
+  - time
+  fill_value: -9999
+span_coefficient:
+  attributes:
+    ancillary_variables: span_coefficient_qc
+    long_name: Licor Span Coefficient
+  datatype: f8
+  dimensions:
+  - time
+  fill_value: -9999
+span_coefficient_qc:
+  attributes:
+    flag_masks:
+    - 1
+    - 2
+    - 4
+    - 8
+    - 64
+    - 512
+    flag_meanings: >-
+      quality_good missing_data out_of_range spike_detected
+      manually_flagged bad_temperature
+    long_name: span_coefficient Quality
+    standard_name: status_flag
+  datatype: I4
+  dimensions:
+  - time
+  fill_value: 4294967295
+span_flag:
+  attributes:
+    long_name: Span Flag
+  datatype: I1
+  dimensions:
+  - time
+  fill_value: 254
+sys_dtime2:
+  attributes:
+    calendar: proleptic_gregorian
+    long_name: SYS DTIME2
+    units: seconds since 1970-01-01T00:00:00
+  datatype: i8
+  dimensions:
+  - time
+  fill_value: -9999
+time:
+  attributes:
+    axis: T
+    calendar: proleptic_gregorian
+    long_name: Time
+    standard_name: time
+    units: seconds since 1970-01-01T00:00:00
+  datatype: i8
+  dimensions:
+  - time
+  fill_value: -9999
+valve_pulse:
+  attributes:
+    long_name: Valve Pulse
+  datatype: i1
+  dimensions:
+  - time
+  fill_value: -1
+zero_coefficient:
+  attributes:
+    long_name: Zero Coefficient
+  datatype: f8
+  dimensions:
+  - time
+  fill_value: 255
+zero_flag:
+  attributes:
+    long_name: Zero Flag
+  datatype: i1
+  dimensions:
+  - time
+  fill_value: -1

@@ -1,0 +1,638 @@
+dissolved_oxygen:
+  attributes:
+    ancillary_variables: dissolved_oxygen_qc
+    long_name: Salinity Compensated O2
+    standard_name: moles_of_oxygen_per_unit_mass_in_sea_water
+    units: umol kg-1
+  datatype: f8
+  dimensions:
+  - time
+  fill_value: -99
+dissolved_oxygen_qc:
+  attributes:
+    flag_masks:
+    - 1
+    - 2
+    - 4
+    - 8
+    - 64
+    flag_meanings: >-
+      quality_good missing_data out_of_range spike_detected
+      manually_flagged
+    long_name: Dissolved Oxygen Quality
+    standard_name: status_flag
+  datatype: I4
+  dimensions:
+  - time
+  fill_value: 4294967295
+o2:
+  attributes:
+    ancillary_variables: o2_qc
+    long_name: Surface Seawater O2 Percent
+    units: '%'
+  datatype: f8
+  dimensions:
+  - time
+  fill_value: -9999
+o2_qc:
+  attributes:
+    flag_masks:
+    - 1
+    - 2
+    - 4
+    - 8
+    - 64
+    flag_meanings: >-
+      quality_good missing_data out_of_range spike_detected
+      manually_flagged
+    long_name: o2 Quality
+    standard_name: status_flag
+  datatype: I4
+  dimensions:
+  - time
+  fill_value: 4294967295
+pco2:
+  attributes:
+    ancillary_variables: pco2_qc
+    long_name: Partial Pressure Carbon Dioxide
+    standard_name: surface_partial_pressure_of_carbon_dioxide_in_sea_water
+    units: umol / mol / atm
+  datatype: f8
+  dimensions:
+  - time
+  fill_value: -9999
+pco2_qc:
+  attributes:
+    flag_masks:
+    - 1
+    - 2
+    - 4
+    - 8
+    - 64
+    flag_meanings: >-
+      quality_good missing_data out_of_range spike_detected
+      manually_flagged
+    long_name: pco2 Quality
+    standard_name: status_flag
+  datatype: I4
+  dimensions:
+  - time
+  fill_value: 4294967295
+post_xco2_dry:
+  attributes:
+    ancillary_variables: post_xco2_dry_qc
+    long_name: Post Correction Mole fraction of CO2
+    standard_name: mole_concentration_of_carbon_dioxide_in_air
+    units: umol / mol
+    valid_range:
+    - 0
+    - 1000
+  datatype: f8
+  dimensions:
+  - time
+  fill_value: -9999
+post_xco2_dry_qc:
+  attributes:
+    flag_masks:
+    - 1
+    - 2
+    - 4
+    - 8
+    - 64
+    - 512
+    - 1024
+    - 2048
+    - 4096
+    - 8192
+    - 16384
+    - 32768
+    - 65536
+    - 131072
+    flag_meanings: >-
+      quality_good
+      missing_data
+      out_of_range
+      spike_detected
+      manually_flagged
+      trend_stddev_out_of_range
+      raw_stddev_out_of_range
+      excess_pressure_off_difference
+      air_pump_pressure_difference
+      equilibriator_pump_pressure_difference
+      span_pump_pressure_difference
+      excess_rh_stddev
+      excess_rh_temp_stddev
+      out_of_span_range
+    long_name: post_xco2_dry Quality
+    standard_name: status_flag
+  datatype: I4
+  dimensions:
+  - time
+  fill_value: 4294967295
+post_xco2_wet_v1:
+  attributes:
+    ancillary_variables: post_xco2_wet_v1_qc
+    long_name: Post Correction Mole fraction of CO2, Licor Version 1
+    standard_name: mole_concentration_of_carbon_dioxide_in_seawater
+    units: umol / mol
+    valid_range:
+    - 0
+    - 1000
+  datatype: f8
+  dimensions:
+  - time
+  fill_value: -9999
+post_xco2_wet_v1_qc:
+  attributes:
+    flag_masks:
+    - 1
+    - 2
+    - 4
+    - 8
+    - 64
+    - 512
+    - 1024
+    - 2048
+    - 4096
+    - 8192
+    - 16384
+    - 32768
+    - 65536
+    flag_meanings: >-
+      quality_good missing_data out_of_range spike_detected
+      manually_flagged trend_stddev_out_of_range
+      raw_stddev_out_of_range excess_pressure_off_difference air_pump_pressure_difference
+      equilibrator_pump_pressure_difference span_pump_pressure_difference excess_rh_stddev
+      excess_rh_temp_stddev
+    long_name: post_xco2_wet Quality, Licor Version 1
+    standard_name: status_flag
+  datatype: I4
+  dimensions:
+  - time
+  fill_value: 4294967295
+post_xco2_wet_v2:
+  attributes:
+    ancillary_variables: post_xco2_wet_v2_qc
+    long_name: Post Correction Mole fraction of CO2, Licor Version 2
+    standard_name: mole_concentration_of_carbon_dioxide_in_seawater
+    units: umol / mol
+    valid_range:
+    - 0
+    - 1000
+  datatype: f8
+  dimensions:
+  - time
+  fill_value: -9999
+post_xco2_wet_v2_qc:
+  attributes:
+    flag_masks:
+    - 1
+    - 2
+    - 4
+    - 8
+    - 64
+    - 512
+    - 1024
+    - 2048
+    - 4096
+    - 8192
+    - 16384
+    - 32768
+    - 65536
+    flag_meanings: >-
+      quality_good missing_data out_of_range spike_detected
+      manually_flagged trend_stddev_out_of_range
+      raw_stddev_out_of_range excess_pressure_off_difference air_pump_pressure_difference
+      equilibrator_pump_pressure_difference span_pump_pressure_difference excess_rh_stddev
+      excess_rh_temp_stddev
+    long_name: post_xco2_wet Quality, Licor Version 2
+    standard_name: status_flag
+  datatype: I4
+  dimensions:
+  - time
+  fill_value: 4294967295
+post_xco2_wet:
+  attributes:
+    ancillary_variables: post_xco2_wet_qc
+    long_name: Post Correction Mole fraction of CO2
+    standard_name: mole_concentration_of_carbon_dioxide_in_seawater
+    units: umol / mol
+    valid_range:
+    - 0
+    - 1000
+  datatype: f8
+  dimensions:
+  - time
+  fill_value: -9999
+post_xco2_wet_qc:
+  attributes:
+    flag_masks:
+    - 1
+    - 2
+    - 4
+    - 8
+    - 64
+    - 512
+    - 1024
+    - 2048
+    - 4096
+    - 8192
+    - 16384
+    - 32768
+    - 65536
+    flag_meanings: >-
+      quality_good missing_data out_of_range spike_detected
+      manually_flagged trend_stddev_out_of_range
+      raw_stddev_out_of_range excess_pressure_off_difference air_pump_pressure_difference
+      equilibrator_pump_pressure_difference span_pump_pressure_difference excess_rh_stddev
+      excess_rh_temp_stddev
+    long_name: post_xco2_wet Quality
+    standard_name: status_flag
+  datatype: I4
+  dimensions:
+  - time
+  fill_value: 4294967295
+pressure:
+  attributes:
+    ancillary_variables: pressure_qc
+    long_name: Pressure
+    standard_name: sea_water_pressure
+    units: kPa
+  datatype: f8
+  dimensions:
+  - time
+  fill_value: -9999
+pressure_qc:
+  attributes:
+    flag_masks:
+    - 1
+    - 2
+    - 4
+    - 8
+    - 64
+    flag_meanings: >-
+      quality_good missing_data out_of_range spike_detected
+      manually_flagged
+    long_name: pressure Quality
+    standard_name: status_flag
+  datatype: I4
+  dimensions:
+  - time
+  fill_value: 4294967295
+rh:
+  attributes:
+    ancillary_variables: rh_qc rh_stddev
+    long_name: Relative Humidity
+    units: '%' 
+  datatype: f8
+  dimensions:
+  - time
+  fill_value: -9999
+rh_qc:
+  attributes:
+    flag_masks:
+    - 1
+    - 2
+    - 4
+    - 8
+    - 64
+    flag_meanings: >-
+      quality_good missing_data out_of_range spike_detected
+      manually_flagged
+    long_name: rh Quality
+    standard_name: status_flag
+  datatype: I4
+  dimensions:
+  - time
+  fill_value: 4294967295
+rh_stddev:
+  attributes:
+    long_name: Relative Humidity STDDEV
+    units: '%'
+  datatype: f8
+  dimensions:
+  - time
+  fill_value: -9999
+rh_temp:
+  attributes:
+    ancillary_variables: rh_temp_qc rh_temp_stddev
+    long_name: Relative Humidity Temperature
+    units: degrees_celsius 
+  datatype: f8
+  dimensions:
+  - time
+  fill_value: -9999
+rh_temp_qc:
+  attributes:
+    flag_masks:
+    - 1
+    - 2
+    - 4
+    - 8
+    - 64
+    flag_meanings: >-
+      quality_good missing_data out_of_range spike_detected
+      manually_flagged
+    long_name: rh_temp Quality
+    standard_name: status_flag
+  datatype: I4
+  dimensions:
+  - time
+  fill_value: 4294967295
+rh_temp_stddev:
+  attributes:
+    long_name: Relative Humidity Temperature STDDEV
+    units: TODO
+  datatype: f8
+  dimensions:
+  - time
+  fill_value: -9999
+temperature:
+  attributes:
+    ancillary_variables: temperature_qc
+    long_name: Temperature
+    units: degrees_Celsius
+    valid_range:
+    - -5 
+    - 50
+  datatype: f8
+  dimensions:
+  - time
+  fill_value: -9999
+temperature_qc:
+  attributes:
+    flag_masks:
+    - 1
+    - 2
+    - 4
+    - 8
+    - 64
+    flag_meanings: >-
+      quality_good missing_data out_of_range spike_detected
+      manually_flagged
+    long_name: temperature Quality
+    standard_name: status_flag
+  datatype: I4
+  dimensions:
+  - time
+  fill_value: 4294967295
+time:
+  attributes:
+    axis: T
+    calendar: proleptic_gregorian
+    long_name: Time
+    standard_name: time
+    units: seconds since 1970-01-01T00:00:00
+  datatype: i8
+  dimensions:
+  - time
+  fill_value: -9999
+updated_span_coefficient:
+  attributes:
+    ancillary_variables: updated_span_coefficient_qc
+    long_name: Licor Span Coefficient
+  datatype: f8
+  dimensions:
+  - time
+  fill_value: -999999
+updated_span_coefficient_qc:
+  attributes:
+    flag_masks:
+    - 1
+    - 2
+    - 4
+    - 8
+    - 64
+    flag_meanings: >-
+      quality_good missing_data out_of_range spike_detected
+      manually_flagged
+    long_name: updated_span_coefficient Quality
+    standard_name: status_flag
+  datatype: I4
+  dimensions:
+  - time
+  fill_value: 4294967295
+vapor_pressure:
+  attributes:
+    long_name: H20 (wet)
+    units: umol / mol
+  datatype: f8
+  dimensions:
+  - time
+  fill_value: -9999
+raw_reference:
+  attributes:
+    ancillary_variables: raw_reference_qc
+    long_name: 'LICOR Voltage Counts:  Raw 1'
+  datatype: f8
+  dimensions:
+  - time
+  fill_value: -9999
+raw_reference_qc:
+  attributes:
+    flag_masks:
+    - 1
+    - 2
+    - 4
+    - 8
+    - 64
+    flag_meanings: >-
+      quality_good missing_data out_of_range spike_detected
+      manually_flagged
+    long_name: voltage_counts1 Quality
+    standard_name: status_flag
+  datatype: I4
+  dimensions:
+  - time
+  fill_value: 4294967295
+raw_sample:
+  attributes:
+    ancillary_variables: raw_sample_qc
+    long_name: 'LICOR Voltage Counts:  Raw 2'
+  datatype: f8
+  dimensions:
+  - time
+  fill_value: -9999
+raw_sample_qc:
+  attributes:
+    flag_masks:
+    - 1
+    - 2
+    - 4
+    - 8
+    - 64
+    flag_meanings: >-
+      quality_good missing_data out_of_range spike_detected
+      manually_flagged
+    long_name: voltage_counts2 Quality
+    standard_name: status_flag
+  datatype: I4
+  dimensions:
+  - time
+  fill_value: 4294967295
+xco2_dry:
+  attributes:
+    ancillary_variables: xco2_dry_qc
+    long_name: Mole fraction of CO2
+    standard_name: mole_concentration_of_carbon_dioxide_in_air
+    units: umol / mol
+    valid_range:
+    - 0
+    - 1000
+  datatype: f8
+  dimensions:
+  - time
+  fill_value: -9999
+xco2_dry_qc:
+  attributes:
+    flag_masks:
+    - 1
+    - 2
+    - 4
+    - 8
+    - 64
+    - 512
+    - 1024
+    - 2048
+    - 4096
+    - 8192
+    - 16384
+    - 32768
+    - 65536
+    flag_meanings: >-
+      quality_good missing_data out_of_range spike_detected
+      manually_flagged trend_stddev_out_of_range
+      raw_stddev_out_of_range excess_pressure_off_difference air_pump_pressure_difference
+      equilibrator_pump_pressure_difference span_pump_pressure_difference excess_rh_stddev
+      excess_rh_temp_stddev
+    long_name: xco2_dry Quality
+    standard_name: status_flag
+  datatype: I4
+  dimensions:
+  - time
+  fill_value: 4294967295
+xco2_dry_air_asvco2:
+  attributes:
+    ancillary_variables: xco2_dry_air_asvco2_qc
+    long_name: Mole fraction of CO2
+    standard_name: mole_concentration_of_carbon_dioxide_in_air
+    units: umol / mol
+    valid_range:
+    - 0
+    - 1000
+  datatype: f8
+  dimensions:
+  - time
+  fill_value: -9999
+xco2_dry_air_asvco2_qc:
+  attributes:
+    flag_masks:
+    - 1
+    - 2
+    - 4
+    - 8
+    - 64
+    - 512
+    - 1024
+    - 131072
+    flag_meanings: >-
+      quality_good
+      missing_data
+      out_of_range
+      spike_detected
+      manually_flagged
+      trend_stddev_out_of_range
+      raw_stddev_out_of_range
+      out_of_span_range
+    long_name: xco2_dry_asvco2 Quality
+    standard_name: status_flag
+  datatype: I4
+  dimensions:
+  - time
+  fill_value: 4294967295
+xco2_wet:
+  attributes:
+    ancillary_variables: xco2_wet_qc xco2_wet_stddev
+    long_name: Mole fraction of CO2
+    standard_name: mole_concentration_of_carbon_dioxide_in_air
+    units: umol / mol
+    valid_range:
+    - 0
+    - 1000
+  datatype: f8
+  dimensions:
+  - time
+  fill_value: -9999
+xco2_wet_qc:
+  attributes:
+    flag_masks:
+    - 1
+    - 2
+    - 4
+    - 8
+    - 64
+    - 512
+    - 1024
+    - 131072
+    flag_meanings: >-
+      quality_good
+      missing_data
+      out_of_range
+      spike_detected
+      manually_flagged
+      trend_stddev_out_of_range
+      raw_stddev_out_of_range
+      out_of_span_range
+    long_name: xco2_wet Quality
+    standard_name: status_flag
+  datatype: I4
+  dimensions:
+  - time
+  fill_value: 4294967295
+xco2_dry_sw_asvco2:
+  attributes:
+    ancillary_variables: xco2_dry_sw_asvco2_qc
+    long_name: Mole fraction of CO2
+    standard_name: mole_concentration_of_carbon_dioxide_in_air
+    units: umol / mol
+    valid_range:
+    - 0
+    - 1000
+  datatype: f8
+  dimensions:
+  - time
+  fill_value: -9999
+xco2_dry_sw_asvco2_qc:
+  attributes:
+    flag_masks:
+    - 1
+    - 2
+    - 4
+    - 8
+    - 64
+    - 512
+    - 1024
+    - 131072
+    flag_meanings: >-
+      quality_good
+      missing_data
+      out_of_range
+      spike_detected
+      manually_flagged
+      trend_stddev_out_of_range
+      raw_stddev_out_of_range
+      out_of_span_range
+    long_name: xco2_dry_asvco2 Quality
+    standard_name: status_flag
+  datatype: I4
+  dimensions:
+  - time
+  fill_value: 4294967295
+xco2_wet_stddev:
+  attributes:
+    long_name: Mole fraction of CO2 STDDEV
+    units: umol / mol
+  datatype: f8
+  dimensions:
+  - time
+  fill_value: -9999

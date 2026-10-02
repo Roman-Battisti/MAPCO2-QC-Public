@@ -1,0 +1,253 @@
+check_sum:
+  attributes:
+    long_name: Checksum
+  datatype: I1
+  dimensions:
+  - time
+  fill_value: 241
+humidity:
+  attributes:
+    long_name: Electronics compartment relative humidity
+    units: '%'
+  datatype: f8
+  dimensions:
+  - time
+  fill_value: -9999
+i_b:
+  attributes:
+    long_name: Substrate Leakage Current
+  datatype: f8
+  dimensions:
+  - time
+  fill_value: -9999
+i_k:
+  attributes:
+    long_name: Counter Electrode Leakage Current
+  datatype: f8
+  dimensions:
+  - time
+  fill_value: -9999
+i_supply:
+  attributes:
+    long_name: Supply Current
+    units: mA
+  datatype: f8
+  dimensions:
+  - time
+  fill_value: -9999
+o_ctd:
+  attributes:
+    long_name: CTD Oxygen Concentration
+    units: ml/L
+  datatype: f8
+  dimensions:
+  - time
+  fill_value: -9999
+p_ctd:
+  attributes:
+    long_name: CTD Pressure
+    units: dbar
+  datatype: f8
+  dimensions:
+  - time
+  fill_value: -9999
+ph:
+  attributes:
+    long_name: FET EXT Calculated pH in Total Scale
+    ancillary_variables: ph_qc
+    standard_name: sea_water_ph_reported_on_total_scale
+    units: "1"
+    valid_range:
+    - 7.5
+    - 8.9
+  datatype: f8
+  dimensions:
+  - time
+  fill_value: -9999
+ph_qc:
+  attributes:
+    flag_masks:
+    - 1
+    - 2
+    - 4
+    - 8
+    - 64
+    - 256
+    - 8192
+    - 16384
+    flag_meanings: >-
+      quality_good missing_data out_of_range spike_detected 
+      manually_flagged bad_SSTc invalid_434_578_measurement
+      too_few_measurements
+    long_name: ph Quality
+    standard_name: status_flag
+  datatype: I4
+  dimensions:
+  - time
+  fill_value: 4294967295
+ph_int:
+  attributes:
+    long_name: FET INT Calculated pH in Total Scale
+    valid_range:
+    - 7.5
+    - 8.9
+  datatype: f8
+  dimensions:
+  - time
+  fill_value: -9999
+s_ctd:
+  attributes:
+    long_name: CTD Salinity
+    units: psu
+  datatype: f8
+  dimensions:
+  - time
+  fill_value: -9999
+SSS:
+  attributes:
+    ancillary_variables: SSS_qc
+    long_name: Salinity
+    standard_name: sea_surface_SSS
+    units: 1e-3
+    valid_range:
+    - 0.0001
+    - 42
+  datatype: f8
+  dimensions:
+  - time
+  fill_value: -9999
+SSS_qc:
+  attributes:
+    flag_masks:
+    - 1
+    - 2
+    - 4
+    - 8
+    - 64
+    flag_meanings: quality_good missing_data out_of_range spike_detected
+      manually_flagged 
+    long_name: SSS Quality
+    standard_name: status_flag
+  datatype: I4
+  dimensions:
+  - time
+  fill_value: 4294967295
+seafet_time:
+  attributes:
+    axis: T
+    calendar: proleptic_gregorian
+    comment: Timestamp from Seafet cycle
+    long_name: Time
+    standard_name: time
+    units: seconds since 1970-01-01T00:00:00
+  datatype: i8
+  dimensions:
+  - time
+  fill_value: -9999
+status:
+  attributes:
+    long_name: Checksum
+  datatype: I2
+  dimensions:
+  - time
+  fill_value: 65535
+temp_ctd:
+  attributes:
+    long_name: CTD Temperature
+    units: degrees_celsius
+  datatype: f8
+  dimensions:
+  - time
+  fill_value: -9999
+temperature:
+  attributes:
+    long_name: ISFET Thermistor temperature
+    units: degrees_celsius
+  datatype: f8
+  dimensions:
+  - time
+  fill_value: -9999
+time:
+  attributes:
+    axis: T
+    calendar: proleptic_gregorian
+    comment: Timestamp from MAPCO2 header
+    long_name: Time
+    standard_name: time
+    units: seconds since 1970-01-01T00:00:00
+  datatype: i8
+  dimensions:
+  - time
+  fill_value: -9999
+v_5v:
+  attributes:
+    long_name: Internal 5V Supply Voltage
+    units: volts
+  datatype: f8
+  dimensions:
+  - time
+  fill_value: -9999
+v_iso:
+  attributes:
+    long_name: Internal isolated supply voltage
+    units: volts
+  datatype: f8
+  dimensions:
+  - time
+  fill_value: -9999
+v_isobatt:
+  attributes:
+    long_name: Isolated battery pack voltage
+    units: volts
+  datatype: f8
+  dimensions:
+  - time
+  fill_value: -9999
+v_k:
+  attributes:
+    long_name: Counter Electode Voltage
+    units: volts
+  datatype: f8
+  dimensions:
+  - time
+  fill_value: -9999
+v_mbatt:
+  attributes:
+    long_name: Main battery pack voltage
+    units: volts
+  datatype: f8
+  dimensions:
+  - time
+  fill_value: -9999
+v_supply:
+  attributes:
+    long_name: Supply voltage
+    units: volts
+  datatype: f8
+  dimensions:
+  - time
+  fill_value: -9999
+v_therm:
+  attributes:
+    long_name: Thermistor Voltage
+    units: volts
+  datatype: f8
+  dimensions:
+  - time
+  fill_value: -9999
+vrs_fet_ext:
+  attributes:
+    long_name: FET EXT Voltage
+    units: volts
+  datatype: f8
+  dimensions:
+  - time
+  fill_value: -9999
+vrs_fet_int:
+  attributes:
+    long_name: FET INT Voltage
+    units: volts
+  datatype: f8
+  dimensions:
+  - time
+  fill_value: -9999

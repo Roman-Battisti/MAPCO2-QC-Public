@@ -1,0 +1,69 @@
+# Generated YML for cheeca, 0107, 20150325
+QC:
+    air_diff_range_higher: 9
+    air_diff_range_lower: 6
+    equil_diff_range_higher: 9
+    equil_diff_range_lower: 6
+    max_air_xco2_std: 2
+    max_equil_xco2_std: 20
+    max_pressoff_diff: 0.2
+    max_rh_std: 4
+    max_rh_temp_std: 2
+    num_points_eachside: 8
+    ppm_above_span_cal: 10
+    ppm_above_zero: 10
+    ppm_below_span_cal: 10
+    ppm_below_zero: 10
+    span_diff_range_higher: 4.5
+    span_diff_range_lower: 1.5
+    start: 1970-01-01 00:00:00
+    stop: 2100-01-01 00:00:00
+    xco2_trend_std: 3
+    chl_global_conversion: 1
+    chl_channel: 0
+    chl_dark_count:
+    - 0.055
+    - 0.068
+    chl_scale_factor:
+    - 10.0
+    - 10.0
+    ntu_channel: 1
+    ntu_dark_count:
+    - 0.07
+    - 0.076
+    ntu_scale_factor:
+    - 5.0
+    - 5.0
+    instrument_time_split: 2015-07-17 16:00:00
+    o2_channel: 2
+    o2_salinity_setting:
+    - 0.0
+    - 0.0
+    o2_temp_channel: 3
+    initial_span_cal: 612.75
+adjustments:
+    licor_pressure_correction: 0.0  #Default
+    mbl_correction: 0.0
+licor_v830_coefficients:
+    a1: 0.3989974
+    a2: 18.249359
+    a3: 0.097101984
+    a4: 1.8458913
+    b1: 1.10158
+    b2: -0.00612178
+    b3: -0.266278
+    tb4: 3.69895
+logging:
+    verbosity: critical
+metadata:
+    pi_list:
+    - address: 7600 Sand Point Way NE Seattle, WA 98115-6349  #Default
+      email: Adrienne.Sutton@noaa.gov
+      first_name: Adrienne
+      last_name: Sutton
+      organization: NOAA/PMEL
+      phone: (206) 526-6879
+      title: Dr.
+chl_credential:
+    username: my-username
+    password: my-password

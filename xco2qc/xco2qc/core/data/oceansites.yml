@@ -1,0 +1,48 @@
+QC_indicator: TBD
+aknowledgement: TBD
+array: TBD
+citation: >
+    These data were collected and made freely available by the OceanSITES
+    project and the national programs that contribute to it.
+comment: TBD
+contributor_email: TBD
+contributor_name: TBD
+contributor_role: TBD
+data_assembly_center: TBD
+data_mode: D
+data_type: OceanSITES time-series data
+date_created: TBD
+date_modified: TBD
+featureType: timeSeries
+format_version: '1.5'
+id: TBD
+institution_url: https://www.pmel.noaa.gov
+keywords_vocabulary: TBD
+naming_authority: OceanSITES
+netcdf_version: TBD
+network: TBD
+platform_code: TBD
+platform_deployment_cruise_name: TBD
+platform_deployment_date: TBD
+platform_deployment_ship_ExpoCode: TBD
+platform_deployment_ship_ICES_code: TBD
+platform_deployment_ship_name: TBD
+platform_recovery_cruise_name: TBD
+platform_recovery_date: TBD
+platform_recovery_ship_ExpoCode: TBD
+platform_recovery_ship_ICES_code: TBD
+platform_recovery_ship_name: TBD
+principal_investigator: Adrienne Sutton
+principal_investigator_email: asutton@noaa.gov
+principal_investigator_url: TBD
+processing_level: TBD
+project: Ocean Carbon
+publisher_email: TBD
+publisher_name: TBD
+publisher_orcid: TBD
+publisher_references: TBD
+publisher_url: TBD
+sea_area: TBD
+source: mooring
+update_interval: void
+wmo_platform_code: TBD

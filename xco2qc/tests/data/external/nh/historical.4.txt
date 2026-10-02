@@ -1,0 +1,110 @@
+# Coding: UTF-8
+# Modified: 2021-03-16 14:26:00
+# --------------------------------------------------------------------
+# DATA PRODUCT
+# 
+# NOAA Surface Ocean CO2 and Ocean Acidification Mooring Time Series:
+# Site Name: NH-10
+# Location:  44.904N, 124.778W
+# Date Range: 2014-04-02 23:00:00 to 2017-04-22 21:30:00
+#
+# General background information:
+# Observations from NOAA's Moored Surface Ocean CO2 Flux and Ocean
+# Acidification Observing Network. Supported by the NOAA Ocean Observing
+# and Monitoring Division, the NOAA Ocean Acidification Program, and over
+# twenty other partners and programs.
+#
+# Buoy site-specific background information:
+# https://www.pmel.noaa.gov/co2/story/NH-10
+#
+# File produced by PMEL Carbon Program
+# https://www.pmel.noaa.gov/co2/
+#
+# --------------------------------------------------------------------
+# DATA SOURCE AND CONTACTS
+#
+# National Oceanic and Atmospheric Administration (NOAA)
+# Pacific Marine Environmental Laboratory (PMEL)
+# Carbon Program
+#
+# Correspondence concerning these data should be directed to:
+#
+# Adrienne Sutton
+# NOAA PMEL Carbon Program
+# 7600 Sand Point Way NE
+# Seattle, WA  98115
+# U.S.A.
+#
+# email: adrienne.sutton (at) noaa.gov
+#
+# --------------------------------------------------------------------
+# USE OF DATA
+#
+# These data are made freely available to the public and the
+# scientific community in the belief that their wide dissemination
+# will lead to greater understanding and new scientific insights.
+# NOAA relies on the ethics and integrity of the user to ensure that
+# PMEL receives fair credit for their work.  If the data are 
+# obtained for potential use in a publication or presentation,
+# PMEL should be informed at the outset of the nature of this work.
+# If the PMEL data are essential to the work, or if an important 
+# result or conclusion depends on the PMEL data, co-authorship
+# may be appropriate.  This should be discussed at an early stage in
+# the work.  Manuscripts using the PMEL data should be sent to PMEL
+# for review before they are submitted for publication so we can 
+# ensure that the quality and limitations of the data are accurately
+# represented.
+#
+# --------------------------------------------------------------------
+# CITATION
+#
+# Please reference these data as
+#
+# Sutton, A. J., Feely, R. A., Maenner-Jones, S., Musielwicz, S., Osborne, J., Dietrich, C., Monacci, N., Cross, J.,
+# Bott, R., Kozyr, A., Andersson, A. J., Bates, N. R., Cai, W.-J., Cronin, M. F., De Carlo, E. H., Hales, B., Howden, S. D.,
+# Lee, C. M., Manzello, D. P., McPhaden, M. J., Meléndez, M., Mickett, J. B., Newton, J. A., Noakes, S. E., Noh, J. H.,
+# Olafsdottir, S. R., Salisbury, J. E., Send, U., Trull, T. W., Vandemark, D. C., and Weller, R. A. (2019): Autonomous seawater 
+# pCO2 and pH time series from 40 surface buoys and the emergence of anthropogenic trends, Earth Syst. Sci. Data, 11, 
+# 421-439, https://doi.org/10.5194/essd-11-421-2019.
+#
+# --------------------------------------------------------------------
+# VARIABLES AND METHODOLOGY
+#
+# datetime_utc: Date and time of measurement in UTC (YYYY-MM-DD HH:MM)
+# SST: Sea surface temperature at 0.5m depth (degrees C); uncertainty <0.01
+# SSS: Sea surface salinity at 0.5m depth; uncertainty <0.05
+# pCO2_sw: seawater pCO2 at <0.5m depth (µatm); uncertainty <2
+# pCO2_air: air pCO2 at 0.5-1m height (µatm); uncertainty <1
+# xCO2_air: air xCO2 at 0.5-1m height (µmol mol-1); uncertainty <0.02
+# pH_sw: seawater pH at 0.5m depth; uncertainty <0.02
+#
+# Data quality control flags:
+# NaN represents missing or bad data
+#
+# Original deployment-level metadata available at:
+# https://www.nodc.noaa.gov/ocads/data/0157247.xml
+#
+# Original deployment-level data and data quality flags available at:
+# https://www.nodc.noaa.gov/ocads/oceans/Moorings/NH10.html
+#
+# Methodology citations: 
+# Sutton, A. J., Sabine, C. L., Maenner-Jones, S.,
+# Lawrence-Slavas, N., Meinig, C., Feely, R. A., Mathis, J. T., 
+# Musielewicz, S., Bott, R., McLain, P. D., Fought, H. J., and Kozyr, A.:
+# A high-frequency atmospheric and seawater pCO2 data set from 14 open-
+# ocean sites using a moored autonomous system, Earth Syst. Sci. Data, 6,
+# 353-366, https://doi.org/10.5194/essd-6-353-2014, 2014.
+#
+# Sutton, A. J., Feely, R. A., Maenner-Jones, S., Musielwicz, S., Osborne, J., Dietrich, C., Monacci, N., Cross, J.,
+# Bott, R., Kozyr, A., Andersson, A. J., Bates, N. R., Cai, W.-J., Cronin, M. F., De Carlo, E. H., Hales, B., Howden, S. D.,
+# Lee, C. M., Manzello, D. P., McPhaden, M. J., Meléndez, M., Mickett, J. B., Newton, J. A., Noakes, S. E., Noh, J. H.,
+# Olafsdottir, S. R., Salisbury, J. E., Send, U., Trull, T. W., Vandemark, D. C., and Weller, R. A. (2019): Autonomous seawater 
+# pCO2 and pH time series from 40 surface buoys and the emergence of anthropogenic trends, Earth Syst. Sci. Data, 11, 
+# 421-439, https://doi.org/10.5194/essd-11-421-2019.
+#
+# --------------------------------------------------------------------
+datetime_utc	SST	SSS	pCO2_sw	pCO2_air	xCO2_air	pH_sw
+2014-04-03 09:17	10.921	32.295	337.4	405.4	409.3	NaN
+2014-04-03 12:17	10.826	32.330	344.4	406.1	410.3	NaN
+2014-04-03 15:17	10.806	32.284	342.3	405.0	409.4	NaN
+2014-04-03 18:17	10.641	32.292	339.0	404.9	409.2	NaN

@@ -1,0 +1,152 @@
+check_sum:
+  attributes:
+    long_name: Checksum
+  datatype: I1
+  fill_value: 241
+humidity:
+  attributes:
+    long_name: Electronics compartment relative humidity
+    units: '%'
+  datatype: f8
+  fill_value: -9999
+i_b:
+  attributes:
+    long_name: Substrate Leakage Current
+  datatype: f8
+  fill_value: -9999
+i_k:
+  attributes:
+    long_name: Counter Electrode Leakage Current
+  datatype: f8
+  fill_value: -9999
+i_supply:
+  attributes:
+    long_name: Supply Current
+    units: mA
+  datatype: f8
+  fill_value: -9999
+o_ctd:
+  attributes:
+    long_name: CTD Oxygen Concentration
+    units: ml/L
+  datatype: f8
+  fill_value: -9999
+p_ctd:
+  attributes:
+    long_name: CTD Pressure
+    units: dbar
+  datatype: f8
+  fill_value: -9999
+ph_ext:
+  attributes:
+    long_name: FET EXT Calculated pH in Total Scale
+    valid_range:
+    - 7.5
+    - 8.9
+  datatype: f8
+  fill_value: -9999
+ph_int:
+  attributes:
+    long_name: FET INT Calculated pH in Total Scale
+    valid_range:
+    - 7.5
+    - 8.9
+  datatype: f8
+  fill_value: -9999
+s_ctd:
+  attributes:
+    long_name: CTD Salinity
+    units: psu
+  datatype: f8
+  fill_value: -9999
+seafet_time:
+  attributes:
+    axis: T
+    calendar: proleptic_gregorian
+    comment: Timestamp from Seafet cycle
+    long_name: Time
+    standard_name: time
+    units: seconds since 1970-01-01T00:00:00
+  datatype: i8
+  fill_value: -9999
+status:
+  attributes:
+    long_name: Checksum
+  datatype: I2
+  fill_value: 65535
+temp_ctd:
+  attributes:
+    long_name: CTD Temperature
+    units: degrees_celsius
+  datatype: f8
+  fill_value: -9999
+temperature:
+  attributes:
+    long_name: ISFET Thermistor temperature
+    units: degrees_celsius
+  datatype: f8
+  fill_value: -9999
+time:
+  attributes:
+    axis: T
+    calendar: proleptic_gregorian
+    comment: Timestamp from MAPCO2 header
+    long_name: Time
+    standard_name: time
+    units: seconds since 1970-01-01T00:00:00
+  datatype: i8
+  fill_value: -9999
+v_5v:
+  attributes:
+    long_name: Internal 5V Supply Voltage
+    units: volts
+  datatype: f8
+  fill_value: -9999
+v_iso:
+  attributes:
+    long_name: Internal isolated supply voltage
+    units: volts
+  datatype: f8
+  fill_value: -9999
+v_isobatt:
+  attributes:
+    long_name: Isolated battery pack voltage
+    units: volts
+  datatype: f8
+  fill_value: -9999
+v_k:
+  attributes:
+    long_name: Counter Electode Voltage
+    units: volts
+  datatype: f8
+  fill_value: -9999
+v_mbatt:
+  attributes:
+    long_name: Main battery pack voltage
+    units: volts
+  datatype: f8
+  fill_value: -9999
+v_supply:
+  attributes:
+    long_name: Supply voltage
+    units: volts
+  datatype: f8
+  fill_value: -9999
+v_therm:
+  attributes:
+    long_name: Thermistor Voltage
+    units: volts
+  datatype: f8
+  fill_value: -9999
+vrs_fet_ext:
+  attributes:
+    long_name: FET EXT Voltage
+    units: volts
+  datatype: f8
+  fill_value: -9999
+vrs_fet_int:
+  attributes:
+    long_name: FET INT Voltage
+    units: volts
+  datatype: f8
+  fill_value: -9999

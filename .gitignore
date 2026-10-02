@@ -1,0 +1,9 @@
+build
+dist
+coverage
+.coverage
+.coveragerc
+*.egg-info
+*.pyc
+*.swp
+htmlcov

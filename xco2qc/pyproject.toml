@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+filterwarnings = [
+    "ignore::FutureWarning:sklearn.*",
+    "ignore::RuntimeWarning:xarray.coding.times.*",
+    "ignore::DeprecationWarning:netCDF.*",
+    "ignore::UserWarning:pandas.plotting.*",
+    "ignore:np.find_common_type is deprecated:DeprecationWarning",
+    "ignore:The figure layout has changed to tight:UserWarning",
+]

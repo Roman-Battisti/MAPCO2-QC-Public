@@ -1,0 +1,20 @@
+o2:
+  attributes:
+    long_name: Salinity Compensated O2
+    standard_name: moles_of_oxygen_per_unit_mass_in_sea_water
+    units: umol kg-1
+  datatype: f8
+  dimensions:
+  - time
+  fill_value: -99
+time:
+  attributes:
+    axis: T
+    calendar: proleptic_gregorian
+    long_name: Time
+    standard_name: time
+    units: seconds since 1970-01-01T00:00:00
+  datatype: i8
+  dimensions:
+  - time
+  fill_value: -9999

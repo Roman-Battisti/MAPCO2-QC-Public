@@ -1,0 +1,39 @@
+o2:
+  attributes:
+    ancillary_variables: o2_qc
+    long_name: Salinity Compensated O2
+    standard_name: moles_of_oxygen_per_unit_mass_in_sea_water
+    units: umol kg-1
+  datatype: f8
+  dimensions:
+  - time
+  fill_value: -99
+o2_qc:
+  attributes:
+    flag_masks:
+    - 1
+    - 2
+    - 4
+    - 8
+    - 64
+    flag_meanings: >-
+      quality_good missing_data out_of_range spike_detected
+      manually_flagged
+    long_name: o2 Quality
+    standard_name: status_flag
+  datatype: I4
+  dimensions:
+  - time
+  fill_value: 4294967295
+time:
+  attributes:
+    axis: T
+    calendar: proleptic_gregorian
+    long_name: Time
+    standard_name: time
+    units: seconds since 1970-01-01T00:00:00
+  datatype: i8
+  dimensions:
+  - time
+  fill_value: -9999
+

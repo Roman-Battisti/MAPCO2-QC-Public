@@ -1,0 +1,44 @@
+li:
+  attributes:
+    long_name: LICOR Sensor Counts
+  datatype: i4
+  dimensions:
+  - time
+  - li_max_sample_size
+  - num_li_vars
+  fill_value: -9999
+o2:
+  attributes:
+    long_name: LICOR Oxygen Raw Counts
+  datatype: i4
+  dimensions:
+  - time
+  - o2_max_sample_size
+  fill_value: -9999
+rh:
+  attributes:
+    long_name: LICOR RH Raw Counts
+  datatype: i4
+  dimensions:
+  - time
+  - rh_max_sample_size
+  fill_value: -9999
+rh_temp:
+  attributes:
+    long_name: LICOR RH Temperature Raw Counts
+  datatype: i4
+  dimensions:
+  - time
+  - rh_temp_max_sample_size
+  fill_value: -9999
+time:
+  attributes:
+    axis: T
+    calendar: proleptic_gregorian
+    long_name: Time
+    standard_name: time
+    units: seconds since 1970-01-01T00:00:00
+  datatype: i8
+  dimensions:
+  - time
+  fill_value: -9999

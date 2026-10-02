@@ -1,0 +1,117 @@
+channel_0:
+  attributes:
+    long_name: SBE16 Channel 0
+  datatype: f8
+  dimensions:
+  - time
+  - channel_0_max_sample_size
+  fill_value: -9999
+channel_1:
+  attributes:
+    long_name: SBE16 Channel 1
+  datatype: f8
+  dimensions:
+  - time
+  - channel_1_max_sample_size
+  fill_value: -9999
+channel_2:
+  attributes:
+    long_name: SBE16 Channel 2
+  datatype: f8
+  dimensions:
+  - time
+  - channel_2_max_sample_size
+  fill_value: -9999
+channel_3:
+  attributes:
+    long_name: SBE16 Channel 3
+  datatype: f8
+  dimensions:
+  - time
+  - channel_3_max_sample_size
+  fill_value: -9999
+channel_4:
+  attributes:
+    long_name: SBE16 Channel 4
+  datatype: f8
+  dimensions:
+  - time
+  - channel_4_max_sample_size
+  fill_value: -9999
+channel_5:
+  attributes:
+    long_name: SBE16 Channel 5
+  datatype: f8
+  dimensions:
+  - time
+  - channel_5_max_sample_size
+  fill_value: -9999
+current:
+  attributes:
+    long_name: Current Samples
+    units: TODO
+  datatype: f8
+  dimensions:
+  - time
+  - current_max_sample_size
+  fill_value: -9999
+density:
+  attributes:
+    long_name: Density samples
+    units: TODO
+  datatype: f8
+  dimensions:
+  - time
+  - density_max_sample_size
+  fill_value: -9999
+gtd:
+  attributes:
+    long_name: GTD
+  datatype: f8
+  dimensions:
+  - time
+  - gtd_max_sample_size
+  - gtd_sample
+  fill_value: -9999
+optode:
+  attributes:
+    long_name: SBE16 Optode
+  datatype: f8
+  dimensions:
+  - time
+  - optode_max_sample_size
+  fill_value: -9999
+pressure:
+  attributes:
+    long_name: Pressure Samples
+  datatype: f8
+  dimensions:
+  - time
+  - pressure_max_sample_size
+  fill_value: -9999
+sbe63:
+  attributes:
+    long_name: SBE63 Samples
+  datatype: f8
+  dimensions:
+  - time
+  - sbe63_max_sample_size
+  fill_value: -9999
+time:
+  attributes:
+    axis: T
+    calendar: proleptic_gregorian
+    long_name: Time
+    standard_name: time
+    units: seconds since 1970-01-01T00:00:00
+  datatype: i8
+  fill_value: -9999
+voltage:
+  attributes:
+    long_name: Voltage Samples
+    units: volts
+  datatype: f8
+  dimensions:
+  - time
+  - voltage_max_sample_size
+  fill_value: -9999

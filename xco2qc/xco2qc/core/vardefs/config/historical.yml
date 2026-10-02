@@ -1,0 +1,128 @@
+chl:
+  attributes:
+    long_name: Chlorophyll
+    units: ug/l
+    valid_range:
+    - 0
+    - 1000
+  datatype: f8
+  dimensions:
+  - time
+  fill_value: -9999
+chl_nighttime:
+  attributes:
+    long_name: Chlorophyll
+    units: ug/l
+    valid_range:
+    - 0
+    - 1000
+  datatype: f8
+  dimensions:
+  - time
+  fill_value: -9999
+dissolved_oxygen:
+  attributes:
+    long_name: Salinity Compensated O2
+    standard_name: moles_of_oxygen_per_unit_mass_in_sea_water
+    units: umol kg-1
+  datatype: f8
+  dimensions:
+  - time
+  fill_value: -99
+doxy:
+  attributes:
+    long_name: Salinity Compensated O2
+    standard_name: moles_of_oxygen_per_unit_mass_in_sea_water
+    units: umol kg-1
+  datatype: f8
+  dimensions:
+  - time
+  fill_value: -99
+ntu:
+  attributes:
+    long_name: Turbidity
+    units: TODO
+    valid_range:
+    - 0
+    - 1000
+  datatype: f8
+  dimensions:
+  - time
+  fill_value: -9999
+pCO2_air:
+  attributes:
+    long_name: Partial Pressure of CO2 in Air at the Airblock
+    standard_name: surface_partial_pressure_of_carbon_dioxide_in_air
+    units: umol / mol / atm
+  datatype: f8
+  dimensions:
+  - time
+  fill_value: -9999
+pCO2_sw:
+  attributes:
+    long_name: Partial Pressure of CO2 in Air in Equilibrium with the Seawater
+    standard_name: surface_partial_pressure_of_carbon_dioxide_in_seawater
+    units: umol / mol / atm
+  datatype: f8
+  dimensions:
+  - time
+  fill_value: -9999
+pH_sw:
+  attributes:
+    long_name: pH
+    standard_name: sea_water_ph_reported_on_total_scale
+    units: "1"
+    valid_range:
+    - 7.5
+    - 8.9
+  datatype: f8
+  dimensions:
+  - time
+  fill_value: -9999
+SSS:
+  attributes:
+    long_name: Salinity
+    standard_name: sea_surface_SSS
+    units: 1e-3
+    valid_range:
+    - 0.0001
+    - 42
+  datatype: f8
+  dimensions:
+  - time
+  fill_value: -9999
+SST:
+  attributes:
+    long_name: Sea Surface Temperature
+    standard_name: sea_surface_temperature
+    units: degrees_celsius
+    valid_range:
+    - -2.5
+    - 40
+  datatype: f8
+  dimensions:
+  - time
+  fill_value: -9999
+time:
+  attributes:
+    axis: T
+    calendar: proleptic_gregorian
+    long_name: Time
+    standard_name: time
+    units: seconds since 1970-01-01T00:00:00
+  datatype: i8
+  dimensions:
+  - time
+  fill_value: -9999
+xCO2_air:
+  attributes:
+    long_name: Mole fraction of CO2 in Dry Air
+    standard_name: mole_concentration_of_carbon_dioxide_in_air
+    units: umol / mol
+    valid_range:
+    - 0
+    - 700
+  datatype: f8
+  dimensions:
+  - time
+  fill_value: -9999

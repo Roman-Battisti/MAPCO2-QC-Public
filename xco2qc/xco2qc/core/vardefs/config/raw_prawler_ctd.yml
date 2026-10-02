@@ -1,0 +1,32 @@
+conductivity:
+  attributes:
+    long_name: Conductivity
+    standard_name: sea_water_electrical_conductivity
+    units: S m-1
+    valid_range:
+    - 1.5
+    - 6.0
+  datatype: f8
+  fill_value: -9999
+pressure:
+  attributes:
+    long_name: Pressure
+    standard_name: sea_water_pressure
+    units: kPa
+  datatype: f8
+  fill_value: -9999
+temperature:
+  attributes:
+    long_name: Temperature
+    units: degrees_celsius
+  datatype: f8
+  fill_value: -9999
+time:
+  attributes:
+    axis: T
+    calendar: proleptic_gregorian
+    long_name: Time
+    standard_name: time
+    units: seconds since 1970-01-01T00:00:00
+  datatype: i8
+  fill_value: -9999

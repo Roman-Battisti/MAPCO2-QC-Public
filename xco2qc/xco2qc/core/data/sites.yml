@@ -1,0 +1,231 @@
+# This config file may be used to associate metadata with a mooring site.
+#
+# The primary ID is always lowercase to avoid any ambiguity.  It is the
+# site ID that is parsed from the raw text file.
+#
+# socat_id : this identifier will be used in the XML file generated for SOCAT 
+# primary : true in all cases except where more than one ID maps to the same
+#     socat ID.  Only one such "primary" key should exist.
+alawai:
+    socat_id: Alawai_158W_21N
+    primary: true
+    erddap_search_term: 'ala wai'
+boboa:
+    socat_id: BOBOA_90E_15N
+    primary: true
+    erddap_search_term: 'boboa'
+cb-06:
+    socat_id: CB-06_125W_43N
+    primary: true
+    erddap_search_term: 'cape arago'
+cce1:
+    socat_id: CCE1_122W_33N
+    primary: true
+    erddap_search_term: 'cce1'
+cce2:
+    socat_id: CCE2_121W_34N
+    primary: true
+    erddap_search_term: 'cce2'
+chaba:
+    socat_id: LaPush_125W_48N
+    primary: true
+    erddap_search_term: 'lapush'
+cheeca:
+    socat_id: Cheeca_80W_25N
+    primary: true
+    erddap_search_term: 'cheeca rocks'
+chuuk_k1:
+    socat_id: ChuukK1_152E_7N
+    primary: true
+    erddap_search_term: 'chuuk'
+coastalla:
+    socat_id: CoastalLA_91W_30N
+    primary: false
+    erddap_search_term: 'coastal la'
+cola:
+    socat_id: CoastalLA_91W_30N
+    primary: true
+    erddap_search_term: 'coastal la'
+coastalms:
+    socat_id: CoastalMS_89W_30N
+    primary: true
+    erddap_search_term: 'coastal ms'
+crescent:
+    socat_id: Crescent_64W_32N
+    primary: true
+    erddap_search_term: 'crescent reef'
+crimp1:
+    socat_id: CRIMP1_158W_21N
+    primary: true
+    erddap_search_term: 'crimp1'
+crimp2:
+    socat_id: CRIMP2_158W_21N
+    primary: true
+    erddap_search_term: 'crimp2'
+dabob:
+    socat_id: Dabob_122W_48N
+    primary: true
+    erddap_search_term: null
+fagatele:
+    socat_id: Fagatele_170W_14S
+    primary: true
+    erddap_search_term: null
+gakoa:
+    socat_id: GAKOA_149W_60N
+    primary: true
+    erddap_search_term: 'gakoa'
+graysff:
+    socat_id: GraysRf_81W_31N
+    primary: false
+    erddap_search_term: 'grays reef'
+heron:
+    socat_id: Heron_152E_23S
+    primary: true
+hogreef:
+    socat_id: Hog_Reef_64W_32N
+    primary: true
+    erddap_search_term: 'hog reef'
+iceland:
+    socat_id: Iceland_13W_68N
+    primary: true
+    erddap_search_term: 'iceland'
+jkeo:
+    socat_id: JKEO_147E_38N
+    primary: true
+    erddap_search_term: 'jkeo'
+kaneohe:
+    socat_id: Kaneohe_158W_21N
+    primary: true
+    erddap_search_term: 'kaneohe'
+keo:
+    socat_id: KEO_145E_32N
+    primary: true
+    erddap_search_term: 'keo'
+kilonalu:
+    socat_id: Kilo_Nalu_158W_21N
+    primary: true
+    erddap_search_term: 'kilo nalu'
+kodiak:
+    socat_id: Kodiak_152W_57N
+    primary: true
+    erddap_search_term: 'kodiak'
+enrique:
+    socat_id: La_Parguera_67W_18N
+    primary: false
+    erddap_search_term: 'la parguera'
+laparguera:
+    socat_id: La_Parguera_67W_18N
+    primary: true
+    erddap_search_term: 'la parguera'
+lapush:
+    socat_id: LaPush_125W_48N
+    primary: true
+    erddap_search_term: 'lapush'
+m2:
+    socat_id: M2_164W_57N
+    primary: true
+    erddap_search_term: 'm2'
+mosean:
+    socat_id: MOSEAN_158W_23N
+    primary: false
+    erddap_search_term: 'whots'
+ndbcga:
+    socat_id: GraysRf_81W_31N
+    primary: true
+    erddap_search_term: 'grays reef'
+nh:
+    socat_id: NH_70W_43N
+    primary: true
+    erddap_search_term: 'gom'
+nh10:
+    socat_id: NH10_124W_44N
+    primary: true
+    erddap_search_term: 'nh10'
+papa:
+    socat_id: Papa_145W_50N
+    primary: true
+    erddap_search_term: 'papa'
+peggy:
+    socat_id: M2_164W_57N
+    primary: false
+    erddap_search_term: 'm2'
+sofs:
+    socat_id: SOFS_142E_46S
+    primary: true
+    erddap_search_term: 'sofs'
+southeast_ak:
+    socat_id: Southeast_AK_56N_134W
+    primary: true
+    erddap_search_term: 'seak'
+stratus:
+    socat_id: Stratus_85W_20S
+    primary: true
+    erddap_search_term: 'stratus'
+tao110w_0n:
+    socat_id: TAO110W_0N
+    primary: true
+    erddap_search_term: 'tao110w'
+110w0:
+    socat_id: TAO110W_0N
+    primary: false
+    erddap_search_term: 'tao110w'
+tao125w_0n:
+    socat_id: TAO125W_0N
+    primary: true
+    erddap_search_term: 'tao125w'
+125w0:
+    socat_id: TAO125W_0N
+    primary: false
+    erddap_search_term: 'tao125w'
+tao140w_0n:
+    socat_id: TAO140W_0N
+    primary: true
+    erddap_search_term: 'tao140w'
+140w0:
+    socat_id: TAO140W_0N
+    primary: false
+    erddap_search_term: 'tao140w'
+tao155w_0n:
+    socat_id: TAO155W_0N
+    primary: true
+    erddap_search_term: 'tao155w'
+155w0:
+    socat_id: TAO155W_0N
+    primary: false
+    erddap_search_term: 'tao155w'
+tao165e_0n:
+    socat_id: TAO165E_0N
+    primary: true
+    erddap_search_term: 'tao165e'
+165e0:
+    socat_id: TAO165E_0N
+    primary: false
+    erddap_search_term: 'tao165e'
+tao165e_8s:
+    socat_id: TAO165E_8S
+    primary: true
+    erddap_search_term: 'tao8s165e'
+165e8s:
+    socat_id: TAO165E_8S
+    primary: false
+    erddap_search_term: 'tao8s165e'
+tao170w_0n:
+    socat_id: TAO170W_0N
+    primary: true
+    erddap_search_term: 'tao170w'
+170w0:
+    socat_id: TAO170W_0N
+    primary: false
+    erddap_search_term: 'tao170w'
+twanoh:
+    socat_id: Twanoh_123W_47N
+    primary: true
+    erddap_search_term: null
+wa:
+    socat_id: WA_125W_47N
+    primary: true
+    erddap_search_term: null
+whots:
+    socat_id: WHOTS_158W_23N
+    primary: true
+    erddap_search_term: 'whots'

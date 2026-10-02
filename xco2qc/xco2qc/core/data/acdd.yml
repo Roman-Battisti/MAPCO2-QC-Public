@@ -1,0 +1,7 @@
+Conventions: COARDS, CF-1.8, ACDD-1.3
+cdm_data_type: TimeSeries
+cdm_timeseries_variables: station_id
+creator_institution: Pacific Marine Environmental Laboratory
+creator_type: person
+geospatial_bounds_crs: EPSG:4326
+standard_name_vocabulary: CF Standard Name Table v76

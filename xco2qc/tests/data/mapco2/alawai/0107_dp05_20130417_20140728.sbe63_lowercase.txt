@@ -1,0 +1,115 @@
+                                                                                                                
+POSO 00000 00000 2014/07/17 18:00:01      hog 0146
+07/17/2014 17:56:34 3222.2660 N 06441.7162 W 0094 4.3 2014/07/17 15:58:04 2014/07/17 15:58:04     I 0030
+14.2 10.8 0.000000 0.000000 0000                                                                                
+**************************************** Zero cycle pump on 00
+Li samples -02
+O2 samples -02
+
+RH samples -02
+
+Rh temp samples -02
+
+**************************************** Zero cycle pump off 00
+Li samples -02
+O2 samples -02
+
+RH samples -02
+
+Rh temp samples -02
+
+**************************************** Zero cycle post cal 00
+Li samples -02
+O2 samples -02
+
+RH samples -02
+
+Rh temp samples -02
+
+**************************************** Span cycle pump on 00
+Li samples -02
+O2 samples -02
+
+RH samples -02
+
+Rh temp samples -02
+
+**************************************** Span cycle pump off 00
+Li samples -02
+O2 samples -02
+
+RH samples -02
+
+Rh temp samples -02
+
+**************************************** Span cycle post cal 00
+Li samples -02
+O2 samples -02
+
+RH samples -02
+
+Rh temp samples -02
+
+**************************************** Equil cycle pump on 00
+Li samples -02
+O2 samples -02
+
+RH samples -02
+
+Rh temp samples -02
+
+**************************************** Equil cycle pump off 00
+Li samples -02
+O2 samples -02
+
+RH samples -02
+
+Rh temp samples -02
+
+**************************************** Air cycle pump on 00
+Li samples -02
+O2 samples -02
+
+RH samples -02
+
+Rh temp samples -02
+
+**************************************** Air cycle pump off 00
+Li samples -02
+O2 samples -02
+
+RH samples -02
+
+Rh temp samples -02
+
+**************************************** Met Data
+SSTC samples 00
+Wind samples 0000
+**************************************** SBE16 Data
+Pressure samples  0
+Channel 0 samples  0
+Channel 1 samples  0
+Channel 2 samples  0
+Channel 3 samples  0
+Channel 4 samples  0
+Channel 5 samples  0
+Serial SBE38 samples  0
+Serial SBE50 samples  0
+Serial SBE63 samples  0
+Serial GTD samples  0
+Serial dual GTD samples  0
+Serial optode samples  0
+Sound velocity samples  0
+Density samples  00
+
+Voltage samples  00
+
+Current samples  00
+
+                                                            
+                                                            
+                                                            
+                                                            
+                                                            
+                                   
+  

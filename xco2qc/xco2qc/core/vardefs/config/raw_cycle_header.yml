@@ -1,0 +1,121 @@
+battery_logic:
+  attributes:
+    long_name: battery logic
+  datatype: f8
+  fill_value: -9999
+battery_trans:
+  attributes:
+    long_name: battery trans
+  datatype: f8
+  fill_value: -9999
+gps_aqtime:
+  attributes:
+    long_name: GPS Acquisition Time
+  datatype: i2
+  fill_value: 32767
+gps_dtime:
+  attributes:
+    calendar: proleptic_gregorian
+    long_name: GPS DTime
+    units: seconds since 1970-01-01T00:00:00
+  datatype: i8
+  fill_value: -9999
+gps_dtime_ck:
+  attributes:
+    calendar: proleptic_gregorian
+    long_name: GPS DTime Check
+    units: seconds since 1970-01-01T00:00:00
+  datatype: i8
+  fill_value: -9999
+latitude:
+  attributes:
+    long_name: GPS Latitude
+    standard_name: latitude
+    units: degrees_north
+    valid_range:
+    - -90
+    - 90
+  datatype: f8
+  fill_value: -9999
+longitude:
+  attributes:
+    long_name: GPS Longitude
+    standard_name: longitude
+    units: degrees_east
+    valid_range:
+    - -180
+    - 180
+  datatype: f8
+  fill_value: -9999
+gps_qf:
+  attributes:
+    long_name: GPS QF
+  datatype: i1
+  fill_value: 127
+in_out_flag:
+  attributes:
+    long_name: In Out Flag
+  datatype: S1
+  fill_value: ' '
+mode:
+  attributes:
+    categories: ' '
+    long_name: Header Mode
+  datatype: I1
+  fill_value: 255
+rand1:
+  attributes:
+    long_name: Rand1
+  datatype: I1
+  fill_value: 255
+rand2:
+  attributes:
+    long_name: Rand2
+  datatype: I1
+  fill_value: 255
+span2_coefficient:
+  attributes:
+    long_name: 2nd Licor Span Coefficient
+  datatype: f8
+  fill_value: -9999
+span_coefficient:
+  attributes:
+    long_name: Licor Span Coefficient
+  datatype: f8
+  fill_value: -9999
+span_flag:
+  attributes:
+    long_name: Span Flag
+  datatype: I1
+  fill_value: 254
+sys_dtime2:
+  attributes:
+    calendar: proleptic_gregorian
+    long_name: SYS DTIME2
+    units: seconds since 1970-01-01T00:00:00
+  datatype: i8
+  fill_value: -9999
+time:
+  attributes:
+    axis: T
+    calendar: proleptic_gregorian
+    long_name: Time
+    standard_name: time
+    units: seconds since 1970-01-01T00:00:00
+  datatype: i8
+  fill_value: -9999
+valve_pulse:
+  attributes:
+    long_name: Valve Pulse
+  datatype: i1
+  fill_value: -1
+zero_coefficient:
+  attributes:
+    long_name: Zero Coefficient
+  datatype: f8
+  fill_value: 255
+zero_flag:
+  attributes:
+    long_name: Zero Flag
+  datatype: i1
+  fill_value: -1
